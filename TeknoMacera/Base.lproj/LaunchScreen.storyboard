@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<device id="retina4_7" orientation="portrait">
+<adaptation id="fullscreen"/>
+</device>
+<dependencies>
+<deployment identifier="iOS"/>
+<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+<capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+</dependencies>
+<scenes>
+<!--View Controller-->
+<scene sceneID="EHf-IW-A2E">
+<objects>
+<viewController id="01J-lp-oVM" sceneMemberID="viewController">
+<layoutGuides>
+<viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+<viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+</layoutGuides>
+<view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+<rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="teknomacera" translatesAutoresizingMaskIntoConstraints="NO" id="VE8-2v-oN1">
+<rect key="frame" x="0.0" y="50" width="375" height="70"/>
+<constraints>
+<constraint firstAttribute="height" constant="70" id="dFV-PE-xO9"/>
+</constraints>
+</imageView>
+<imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hosgeldin" translatesAutoresizingMaskIntoConstraints="NO" id="o0M-wv-JHy">
+<rect key="frame" x="19" y="120" width="375" height="70"/>
+<constraints>
+<constraint firstAttribute="height" constant="70" id="7DN-Ce-Kb3"/>
+</constraints>
+</imageView>
+<imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launc2" translatesAutoresizingMaskIntoConstraints="NO" id="080-T1-730">
+<rect key="frame" x="19" y="190" width="375" height="477"/>
+</imageView>
+<imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asel_logo" translatesAutoresizingMaskIntoConstraints="NO" id="xlA-uf-ktx">
+<rect key="frame" x="19" y="190" width="100" height="100"/>
+<constraints>
+<constraint firstAttribute="width" constant="100" id="o98-22-EqY"/>
+<constraint firstAttribute="width" secondItem="xlA-uf-ktx" secondAttribute="height" multiplier="1:1" id="vON-BZ-7Nr"/>
+</constraints>
+</imageView>
+</subviews>
+<color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+<constraints>
+<constraint firstItem="xlA-uf-ktx" firstAttribute="leading" secondItem="080-T1-730" secondAttribute="leading" id="0xx-Xc-xDV"/>
+<constraint firstItem="o0M-wv-JHy" firstAttribute="top" secondItem="VE8-2v-oN1" secondAttribute="bottom" id="8NJ-DR-uUB"/>
+<constraint firstItem="VE8-2v-oN1" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="Asa-Pr-CCV"/>
+<constraint firstItem="xlA-uf-ktx" firstAttribute="top" secondItem="080-T1-730" secondAttribute="top" id="Fy3-Cn-UbC"/>
+<constraint firstItem="VE8-2v-oN1" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Hf5-p0-VxB"/>
+<constraint firstItem="080-T1-730" firstAttribute="top" secondItem="o0M-wv-JHy" secondAttribute="bottom" id="MYm-ea-oVT"/>
+<constraint firstItem="VE8-2v-oN1" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="30" id="SZ0-ad-KB2"/>
+<constraint firstAttribute="bottom" secondItem="080-T1-730" secondAttribute="bottom" id="XvJ-dt-4D7"/>
+<constraint firstItem="080-T1-730" firstAttribute="width" secondItem="o0M-wv-JHy" secondAttribute="width" id="are-FV-6q5"/>
+<constraint firstItem="o0M-wv-JHy" firstAttribute="width" secondItem="VE8-2v-oN1" secondAttribute="width" id="dm5-1O-asw"/>
+<constraint firstItem="080-T1-730" firstAttribute="centerX" secondItem="o0M-wv-JHy" secondAttribute="centerX" id="kl9-h9-fLi"/>
+<constraint firstItem="o0M-wv-JHy" firstAttribute="centerX" secondItem="VE8-2v-oN1" secondAttribute="centerX" multiplier="1.1" id="opI-Sa-Rdo"/>
+</constraints>
+</view>
+</viewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="53" y="375"/>
+</scene>
+</scenes>
+<resources>
+<image name="Hosgeldin" width="1118" height="373"/>
+<image name="asel_logo" width="300" height="247"/>
+<image name="launc2" width="1600" height="1600"/>
+<image name="teknomacera" width="1554" height="420"/>
+</resources>
+</document>

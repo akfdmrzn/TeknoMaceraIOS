@@ -1,0 +1,840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FDA859A228B485700B246AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA8599228B485700B246AD /* AppDelegate.swift */; };
+		4FDA859C228B485700B246AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA859B228B485700B246AD /* ViewController.swift */; };
+		4FDA859F228B485700B246AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA859D228B485700B246AD /* Main.storyboard */; };
+		4FDA85A1228B485900B246AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA85A0228B485900B246AD /* Assets.xcassets */; };
+		4FDA85A4228B485900B246AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA85A2228B485900B246AD /* LaunchScreen.storyboard */; };
+		4FDA85AF228B485900B246AD /* TeknoMaceraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA85AE228B485900B246AD /* TeknoMaceraTests.swift */; };
+		4FDA85BA228B485900B246AD /* TeknoMaceraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA85B9228B485900B246AD /* TeknoMaceraUITests.swift */; };
+		4FDA85D4228B493500B246AD /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA85D3228B493500B246AD /* Storyboardable.swift */; };
+		4FDA85D6228B493B00B246AD /* SampleTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA85D5228B493B00B246AD /* SampleTableCell.swift */; };
+		4FDA85E5228B494600B246AD /* RegisterVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA85D7228B494500B246AD /* RegisterVC.storyboard */; };
+		4FDA85E6228B494600B246AD /* PlayGameVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA85D8228B494500B246AD /* PlayGameVC.storyboard */; };
+		4FDA85E7228B494600B246AD /* EtkinlikVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA85D9228B494500B246AD /* EtkinlikVC.storyboard */; };
+		4FDA85E8228B494600B246AD /* WatchLearnVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA85DA228B494500B246AD /* WatchLearnVC.storyboard */; };
+		4FDA85E9228B494600B246AD /* KittyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA85DB228B494500B246AD /* KittyViewController.swift */; };
+		4FDA85EA228B494600B246AD /* KittyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA85DC228B494600B246AD /* KittyViewController.storyboard */; };
+		4FDA85EB228B494600B246AD /* PlayGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA85DD228B494600B246AD /* PlayGameVC.swift */; };
+		4FDA85EC228B494600B246AD /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA85DE228B494600B246AD /* RegisterVC.swift */; };
+		4FDA85ED228B494600B246AD /* AskAselsanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA85DF228B494600B246AD /* AskAselsanVC.swift */; };
+		4FDA85EE228B494600B246AD /* KesfetVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA85E0228B494600B246AD /* KesfetVC.storyboard */; };
+		4FDA85EF228B494600B246AD /* EtkinlikVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA85E1228B494600B246AD /* EtkinlikVC.swift */; };
+		4FDA85F0228B494600B246AD /* KesfetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA85E2228B494600B246AD /* KesfetVC.swift */; };
+		4FDA85F1228B494600B246AD /* WatchLearnVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA85E3228B494600B246AD /* WatchLearnVC.swift */; };
+		4FDA85F2228B494600B246AD /* AskAselsanVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA85E4228B494600B246AD /* AskAselsanVC.storyboard */; };
+		4FDA85F6228B495200B246AD /* SampleMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA85F3228B495200B246AD /* SampleMenuViewController.swift */; };
+		4FDA85F7228B495200B246AD /* HostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA85F4228B495200B246AD /* HostViewController.swift */; };
+		4FDA85F8228B495200B246AD /* SampleMenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA85F5228B495200B246AD /* SampleMenuViewController.storyboard */; };
+		69D6FC98BD6FC2E25BA1524D /* Pods_TeknoMaceraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4595673B446991C35F694A58 /* Pods_TeknoMaceraUITests.framework */; };
+		A63C8024357705E86135C8DA /* Pods_TeknoMaceraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1F783C7961A477B9BA4975 /* Pods_TeknoMaceraTests.framework */; };
+		F8A097882AF66873693B075F /* Pods_TeknoMacera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5D65C6EC0B1471C17BC390 /* Pods_TeknoMacera.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FDA85AB228B485900B246AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FDA858E228B485700B246AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FDA8595228B485700B246AD;
+			remoteInfo = TeknoMacera;
+		};
+		4FDA85B6228B485900B246AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FDA858E228B485700B246AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FDA8595228B485700B246AD;
+			remoteInfo = TeknoMacera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12C83B4138C29C00271CC909 /* Pods-TeknoMacera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeknoMacera.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeknoMacera/Pods-TeknoMacera.release.xcconfig"; sourceTree = "<group>"; };
+		1E5D65C6EC0B1471C17BC390 /* Pods_TeknoMacera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeknoMacera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35CE9AFEA5ECCBA770BB6E20 /* Pods-TeknoMaceraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeknoMaceraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeknoMaceraUITests/Pods-TeknoMaceraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4595673B446991C35F694A58 /* Pods_TeknoMaceraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeknoMaceraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B708321925C2FB5856DEEB3 /* Pods-TeknoMaceraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeknoMaceraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeknoMaceraTests/Pods-TeknoMaceraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4BDD2FE3B26687C4A1A1D207 /* Pods-TeknoMaceraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeknoMaceraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeknoMaceraUITests/Pods-TeknoMaceraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4FDA8596228B485700B246AD /* TeknoMacera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeknoMacera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FDA8599228B485700B246AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4FDA859B228B485700B246AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FDA859E228B485700B246AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FDA85A0228B485900B246AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FDA85A3228B485900B246AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4FDA85A5228B485900B246AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FDA85AA228B485900B246AD /* TeknoMaceraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeknoMaceraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FDA85AE228B485900B246AD /* TeknoMaceraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeknoMaceraTests.swift; sourceTree = "<group>"; };
+		4FDA85B0228B485900B246AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FDA85B5228B485900B246AD /* TeknoMaceraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeknoMaceraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FDA85B9228B485900B246AD /* TeknoMaceraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeknoMaceraUITests.swift; sourceTree = "<group>"; };
+		4FDA85BB228B485900B246AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FDA85D3228B493500B246AD /* Storyboardable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		4FDA85D5228B493B00B246AD /* SampleTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTableCell.swift; sourceTree = "<group>"; };
+		4FDA85D7228B494500B246AD /* RegisterVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterVC.storyboard; sourceTree = "<group>"; };
+		4FDA85D8228B494500B246AD /* PlayGameVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlayGameVC.storyboard; sourceTree = "<group>"; };
+		4FDA85D9228B494500B246AD /* EtkinlikVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EtkinlikVC.storyboard; sourceTree = "<group>"; };
+		4FDA85DA228B494500B246AD /* WatchLearnVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WatchLearnVC.storyboard; sourceTree = "<group>"; };
+		4FDA85DB228B494500B246AD /* KittyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KittyViewController.swift; sourceTree = "<group>"; };
+		4FDA85DC228B494600B246AD /* KittyViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KittyViewController.storyboard; sourceTree = "<group>"; };
+		4FDA85DD228B494600B246AD /* PlayGameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayGameVC.swift; sourceTree = "<group>"; };
+		4FDA85DE228B494600B246AD /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		4FDA85DF228B494600B246AD /* AskAselsanVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AskAselsanVC.swift; sourceTree = "<group>"; };
+		4FDA85E0228B494600B246AD /* KesfetVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KesfetVC.storyboard; sourceTree = "<group>"; };
+		4FDA85E1228B494600B246AD /* EtkinlikVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtkinlikVC.swift; sourceTree = "<group>"; };
+		4FDA85E2228B494600B246AD /* KesfetVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KesfetVC.swift; sourceTree = "<group>"; };
+		4FDA85E3228B494600B246AD /* WatchLearnVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchLearnVC.swift; sourceTree = "<group>"; };
+		4FDA85E4228B494600B246AD /* AskAselsanVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AskAselsanVC.storyboard; sourceTree = "<group>"; };
+		4FDA85F3228B495200B246AD /* SampleMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleMenuViewController.swift; sourceTree = "<group>"; };
+		4FDA85F4228B495200B246AD /* HostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostViewController.swift; sourceTree = "<group>"; };
+		4FDA85F5228B495200B246AD /* SampleMenuViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SampleMenuViewController.storyboard; sourceTree = "<group>"; };
+		5B0725809A0D76921076CE23 /* Pods-TeknoMacera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeknoMacera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeknoMacera/Pods-TeknoMacera.debug.xcconfig"; sourceTree = "<group>"; };
+		F1D43A486EF4A9D02999AB84 /* Pods-TeknoMaceraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeknoMaceraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeknoMaceraTests/Pods-TeknoMaceraTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE1F783C7961A477B9BA4975 /* Pods_TeknoMaceraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeknoMaceraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FDA8593228B485700B246AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A097882AF66873693B075F /* Pods_TeknoMacera.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FDA85A7228B485900B246AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A63C8024357705E86135C8DA /* Pods_TeknoMaceraTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FDA85B2228B485900B246AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D6FC98BD6FC2E25BA1524D /* Pods_TeknoMaceraUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FDA858D228B485700B246AD = {
+			isa = PBXGroup;
+			children = (
+				4FDA8598228B485700B246AD /* TeknoMacera */,
+				4FDA85AD228B485900B246AD /* TeknoMaceraTests */,
+				4FDA85B8228B485900B246AD /* TeknoMaceraUITests */,
+				4FDA8597228B485700B246AD /* Products */,
+				E55F428BB59CB4DF5666F275 /* Pods */,
+				A99F6DE5BDE6F8AC0A5A7A01 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4FDA8597228B485700B246AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FDA8596228B485700B246AD /* TeknoMacera.app */,
+				4FDA85AA228B485900B246AD /* TeknoMaceraTests.xctest */,
+				4FDA85B5228B485900B246AD /* TeknoMaceraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FDA8598228B485700B246AD /* TeknoMacera */ = {
+			isa = PBXGroup;
+			children = (
+				4FDA85D2228B492A00B246AD /* Helpers */,
+				4FDA85D1228B492600B246AD /* Cells */,
+				4FDA85D0228B492000B246AD /* Menu Controllers */,
+				4FDA85CF228B491A00B246AD /* Controllers */,
+				4FDA8599228B485700B246AD /* AppDelegate.swift */,
+				4FDA859B228B485700B246AD /* ViewController.swift */,
+				4FDA859D228B485700B246AD /* Main.storyboard */,
+				4FDA85A0228B485900B246AD /* Assets.xcassets */,
+				4FDA85A2228B485900B246AD /* LaunchScreen.storyboard */,
+				4FDA85A5228B485900B246AD /* Info.plist */,
+			);
+			path = TeknoMacera;
+			sourceTree = "<group>";
+		};
+		4FDA85AD228B485900B246AD /* TeknoMaceraTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FDA85AE228B485900B246AD /* TeknoMaceraTests.swift */,
+				4FDA85B0228B485900B246AD /* Info.plist */,
+			);
+			path = TeknoMaceraTests;
+			sourceTree = "<group>";
+		};
+		4FDA85B8228B485900B246AD /* TeknoMaceraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4FDA85B9228B485900B246AD /* TeknoMaceraUITests.swift */,
+				4FDA85BB228B485900B246AD /* Info.plist */,
+			);
+			path = TeknoMaceraUITests;
+			sourceTree = "<group>";
+		};
+		4FDA85CF228B491A00B246AD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4FDA85F4228B495200B246AD /* HostViewController.swift */,
+				4FDA85F5228B495200B246AD /* SampleMenuViewController.storyboard */,
+				4FDA85F3228B495200B246AD /* SampleMenuViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4FDA85D0228B492000B246AD /* Menu Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4FDA85DC228B494600B246AD /* KittyViewController.storyboard */,
+				4FDA85DB228B494500B246AD /* KittyViewController.swift */,
+				4FDA85DA228B494500B246AD /* WatchLearnVC.storyboard */,
+				4FDA85E3228B494600B246AD /* WatchLearnVC.swift */,
+				4FDA85D8228B494500B246AD /* PlayGameVC.storyboard */,
+				4FDA85DD228B494600B246AD /* PlayGameVC.swift */,
+				4FDA85D9228B494500B246AD /* EtkinlikVC.storyboard */,
+				4FDA85E1228B494600B246AD /* EtkinlikVC.swift */,
+				4FDA85E0228B494600B246AD /* KesfetVC.storyboard */,
+				4FDA85E2228B494600B246AD /* KesfetVC.swift */,
+				4FDA85D7228B494500B246AD /* RegisterVC.storyboard */,
+				4FDA85DE228B494600B246AD /* RegisterVC.swift */,
+				4FDA85E4228B494600B246AD /* AskAselsanVC.storyboard */,
+				4FDA85DF228B494600B246AD /* AskAselsanVC.swift */,
+			);
+			path = "Menu Controllers";
+			sourceTree = "<group>";
+		};
+		4FDA85D1228B492600B246AD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4FDA85D5228B493B00B246AD /* SampleTableCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4FDA85D2228B492A00B246AD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4FDA85D3228B493500B246AD /* Storyboardable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A99F6DE5BDE6F8AC0A5A7A01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E5D65C6EC0B1471C17BC390 /* Pods_TeknoMacera.framework */,
+				FE1F783C7961A477B9BA4975 /* Pods_TeknoMaceraTests.framework */,
+				4595673B446991C35F694A58 /* Pods_TeknoMaceraUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E55F428BB59CB4DF5666F275 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B0725809A0D76921076CE23 /* Pods-TeknoMacera.debug.xcconfig */,
+				12C83B4138C29C00271CC909 /* Pods-TeknoMacera.release.xcconfig */,
+				4B708321925C2FB5856DEEB3 /* Pods-TeknoMaceraTests.debug.xcconfig */,
+				F1D43A486EF4A9D02999AB84 /* Pods-TeknoMaceraTests.release.xcconfig */,
+				4BDD2FE3B26687C4A1A1D207 /* Pods-TeknoMaceraUITests.debug.xcconfig */,
+				35CE9AFEA5ECCBA770BB6E20 /* Pods-TeknoMaceraUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FDA8595228B485700B246AD /* TeknoMacera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FDA85BE228B485900B246AD /* Build configuration list for PBXNativeTarget "TeknoMacera" */;
+			buildPhases = (
+				58B248386C371F7CBF1AECE1 /* [CP] Check Pods Manifest.lock */,
+				4FDA8592228B485700B246AD /* Sources */,
+				4FDA8593228B485700B246AD /* Frameworks */,
+				4FDA8594228B485700B246AD /* Resources */,
+				ADA807442E178A8A12CDE923 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeknoMacera;
+			productName = TeknoMacera;
+			productReference = 4FDA8596228B485700B246AD /* TeknoMacera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FDA85A9228B485900B246AD /* TeknoMaceraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FDA85C1228B485900B246AD /* Build configuration list for PBXNativeTarget "TeknoMaceraTests" */;
+			buildPhases = (
+				4F6845604DA200B57525904A /* [CP] Check Pods Manifest.lock */,
+				4FDA85A6228B485900B246AD /* Sources */,
+				4FDA85A7228B485900B246AD /* Frameworks */,
+				4FDA85A8228B485900B246AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FDA85AC228B485900B246AD /* PBXTargetDependency */,
+			);
+			name = TeknoMaceraTests;
+			productName = TeknoMaceraTests;
+			productReference = 4FDA85AA228B485900B246AD /* TeknoMaceraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4FDA85B4228B485900B246AD /* TeknoMaceraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FDA85C4228B485900B246AD /* Build configuration list for PBXNativeTarget "TeknoMaceraUITests" */;
+			buildPhases = (
+				9EB9BCF933E094A7F2C7D2A6 /* [CP] Check Pods Manifest.lock */,
+				4FDA85B1228B485900B246AD /* Sources */,
+				4FDA85B2228B485900B246AD /* Frameworks */,
+				4FDA85B3228B485900B246AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FDA85B7228B485900B246AD /* PBXTargetDependency */,
+			);
+			name = TeknoMaceraUITests;
+			productName = TeknoMaceraUITests;
+			productReference = 4FDA85B5228B485900B246AD /* TeknoMaceraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FDA858E228B485700B246AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = LoodosAkif;
+				TargetAttributes = {
+					4FDA8595228B485700B246AD = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					4FDA85A9228B485900B246AD = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 4FDA8595228B485700B246AD;
+					};
+					4FDA85B4228B485900B246AD = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 4FDA8595228B485700B246AD;
+					};
+				};
+			};
+			buildConfigurationList = 4FDA8591228B485700B246AD /* Build configuration list for PBXProject "TeknoMacera" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FDA858D228B485700B246AD;
+			productRefGroup = 4FDA8597228B485700B246AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FDA8595228B485700B246AD /* TeknoMacera */,
+				4FDA85A9228B485900B246AD /* TeknoMaceraTests */,
+				4FDA85B4228B485900B246AD /* TeknoMaceraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FDA8594228B485700B246AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FDA85A4228B485900B246AD /* LaunchScreen.storyboard in Resources */,
+				4FDA85F2228B494600B246AD /* AskAselsanVC.storyboard in Resources */,
+				4FDA85EE228B494600B246AD /* KesfetVC.storyboard in Resources */,
+				4FDA85EA228B494600B246AD /* KittyViewController.storyboard in Resources */,
+				4FDA85A1228B485900B246AD /* Assets.xcassets in Resources */,
+				4FDA85E7228B494600B246AD /* EtkinlikVC.storyboard in Resources */,
+				4FDA85E8228B494600B246AD /* WatchLearnVC.storyboard in Resources */,
+				4FDA85E6228B494600B246AD /* PlayGameVC.storyboard in Resources */,
+				4FDA85E5228B494600B246AD /* RegisterVC.storyboard in Resources */,
+				4FDA859F228B485700B246AD /* Main.storyboard in Resources */,
+				4FDA85F8228B495200B246AD /* SampleMenuViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FDA85A8228B485900B246AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FDA85B3228B485900B246AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F6845604DA200B57525904A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeknoMaceraTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58B248386C371F7CBF1AECE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeknoMacera-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EB9BCF933E094A7F2C7D2A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeknoMaceraUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADA807442E178A8A12CDE923 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TeknoMacera/Pods-TeknoMacera-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/InteractiveSideMenu/InteractiveSideMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InteractiveSideMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeknoMacera/Pods-TeknoMacera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FDA8592228B485700B246AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FDA859C228B485700B246AD /* ViewController.swift in Sources */,
+				4FDA85D4228B493500B246AD /* Storyboardable.swift in Sources */,
+				4FDA85D6228B493B00B246AD /* SampleTableCell.swift in Sources */,
+				4FDA85EF228B494600B246AD /* EtkinlikVC.swift in Sources */,
+				4FDA85F0228B494600B246AD /* KesfetVC.swift in Sources */,
+				4FDA85E9228B494600B246AD /* KittyViewController.swift in Sources */,
+				4FDA85F1228B494600B246AD /* WatchLearnVC.swift in Sources */,
+				4FDA85F6228B495200B246AD /* SampleMenuViewController.swift in Sources */,
+				4FDA85ED228B494600B246AD /* AskAselsanVC.swift in Sources */,
+				4FDA85F7228B495200B246AD /* HostViewController.swift in Sources */,
+				4FDA85EC228B494600B246AD /* RegisterVC.swift in Sources */,
+				4FDA85EB228B494600B246AD /* PlayGameVC.swift in Sources */,
+				4FDA859A228B485700B246AD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FDA85A6228B485900B246AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FDA85AF228B485900B246AD /* TeknoMaceraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FDA85B1228B485900B246AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FDA85BA228B485900B246AD /* TeknoMaceraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FDA85AC228B485900B246AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FDA8595228B485700B246AD /* TeknoMacera */;
+			targetProxy = 4FDA85AB228B485900B246AD /* PBXContainerItemProxy */;
+		};
+		4FDA85B7228B485900B246AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FDA8595228B485700B246AD /* TeknoMacera */;
+			targetProxy = 4FDA85B6228B485900B246AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4FDA859D228B485700B246AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FDA859E228B485700B246AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4FDA85A2228B485900B246AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FDA85A3228B485900B246AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FDA85BC228B485900B246AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4FDA85BD228B485900B246AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FDA85BF228B485900B246AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B0725809A0D76921076CE23 /* Pods-TeknoMacera.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65TH5D9393;
+				INFOPLIST_FILE = TeknoMacera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aselsanTekno.TeknoMacera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FDA85C0228B485900B246AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12C83B4138C29C00271CC909 /* Pods-TeknoMacera.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65TH5D9393;
+				INFOPLIST_FILE = TeknoMacera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aselsanTekno.TeknoMacera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4FDA85C2228B485900B246AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B708321925C2FB5856DEEB3 /* Pods-TeknoMaceraTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65TH5D9393;
+				INFOPLIST_FILE = TeknoMaceraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aselsanTekno.TeknoMaceraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeknoMacera.app/TeknoMacera";
+			};
+			name = Debug;
+		};
+		4FDA85C3228B485900B246AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1D43A486EF4A9D02999AB84 /* Pods-TeknoMaceraTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65TH5D9393;
+				INFOPLIST_FILE = TeknoMaceraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aselsanTekno.TeknoMaceraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeknoMacera.app/TeknoMacera";
+			};
+			name = Release;
+		};
+		4FDA85C5228B485900B246AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BDD2FE3B26687C4A1A1D207 /* Pods-TeknoMaceraUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65TH5D9393;
+				INFOPLIST_FILE = TeknoMaceraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aselsanTekno.TeknoMaceraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TeknoMacera;
+			};
+			name = Debug;
+		};
+		4FDA85C6228B485900B246AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35CE9AFEA5ECCBA770BB6E20 /* Pods-TeknoMaceraUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65TH5D9393;
+				INFOPLIST_FILE = TeknoMaceraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aselsanTekno.TeknoMaceraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TeknoMacera;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FDA8591228B485700B246AD /* Build configuration list for PBXProject "TeknoMacera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FDA85BC228B485900B246AD /* Debug */,
+				4FDA85BD228B485900B246AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FDA85BE228B485900B246AD /* Build configuration list for PBXNativeTarget "TeknoMacera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FDA85BF228B485900B246AD /* Debug */,
+				4FDA85C0228B485900B246AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FDA85C1228B485900B246AD /* Build configuration list for PBXNativeTarget "TeknoMaceraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FDA85C2228B485900B246AD /* Debug */,
+				4FDA85C3228B485900B246AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FDA85C4228B485900B246AD /* Build configuration list for PBXNativeTarget "TeknoMaceraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FDA85C5228B485900B246AD /* Debug */,
+				4FDA85C6228B485900B246AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FDA858E228B485700B246AD /* Project object */;
+}

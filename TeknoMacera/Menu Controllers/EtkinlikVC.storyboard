@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N2g-OS-2fm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Etkinlik-->
+        <scene sceneID="Hp9-Tt-Wgw">
+            <objects>
+                <viewController storyboardIdentifier="Etkinlik" title="Etkinlik" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N2g-OS-2fm" customClass="EtkinlikVC" customModule="TeknoMacera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QO8-vh-cyI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="y4N-PD-g8s">
+                                <rect key="frame" x="0.0" y="20" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="ou7-GD-n95"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asel_logo" translatesAutoresizingMaskIntoConstraints="NO" id="ETB-WQ-PGZ">
+                                <rect key="frame" x="60" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ETB-WQ-PGZ" secondAttribute="height" multiplier="1:1" id="wib-4U-oXR"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Q8-f1-bmd">
+                                <rect key="frame" x="0.0" y="220" width="375" height="447"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="A6o-QH-2BZ">
+                                <rect key="frame" x="177.5" y="333.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="8Bl-fL-JBC"/>
+                                    <constraint firstAttribute="width" constant="20" id="PgO-Ds-Sr4"/>
+                                </constraints>
+                                <color key="color" red="0.26067504740000003" green="0.27596400119999998" blue="0.68373542750000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Naa-PU-axp">
+                                <rect key="frame" x="6" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="4Vn-4k-Zs5"/>
+                                    <constraint firstAttribute="width" secondItem="Naa-PU-axp" secondAttribute="height" multiplier="1:1" id="9Hj-pE-5CJ"/>
+                                </constraints>
+                                <state key="normal" image="Menu"/>
+                                <connections>
+                                    <action selector="openMenu:" destination="N2g-OS-2fm" eventType="touchUpInside" id="c84-xy-8VA"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipL-rf-M6L">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" red="0.1450980392" green="0.14901960780000001" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="y4N-PD-g8s" firstAttribute="centerX" secondItem="wfg-e0-MjG" secondAttribute="centerX" id="2SA-ou-Zc7"/>
+                            <constraint firstItem="y4N-PD-g8s" firstAttribute="top" secondItem="wfg-e0-MjG" secondAttribute="top" id="5jd-cs-0Rw"/>
+                            <constraint firstItem="Naa-PU-axp" firstAttribute="top" secondItem="wfg-e0-MjG" secondAttribute="top" id="BEi-Nr-rdx"/>
+                            <constraint firstItem="A6o-QH-2BZ" firstAttribute="centerX" secondItem="wfg-e0-MjG" secondAttribute="centerX" id="Dgo-JP-Svv"/>
+                            <constraint firstItem="ipL-rf-M6L" firstAttribute="top" secondItem="QO8-vh-cyI" secondAttribute="top" id="DnI-Hg-UFH"/>
+                            <constraint firstItem="ETB-WQ-PGZ" firstAttribute="width" secondItem="Naa-PU-axp" secondAttribute="width" id="GdQ-0B-Pfw"/>
+                            <constraint firstItem="4Q8-f1-bmd" firstAttribute="top" secondItem="y4N-PD-g8s" secondAttribute="bottom" id="IAw-c0-tdI"/>
+                            <constraint firstItem="ipL-rf-M6L" firstAttribute="leading" secondItem="QO8-vh-cyI" secondAttribute="leading" id="J8l-dw-aAJ"/>
+                            <constraint firstItem="y4N-PD-g8s" firstAttribute="top" secondItem="ipL-rf-M6L" secondAttribute="bottom" id="Lds-dH-Cdo"/>
+                            <constraint firstItem="ETB-WQ-PGZ" firstAttribute="top" secondItem="Naa-PU-axp" secondAttribute="top" id="Q8c-tw-Agv"/>
+                            <constraint firstAttribute="trailing" secondItem="ipL-rf-M6L" secondAttribute="trailing" id="SXD-TB-XFx"/>
+                            <constraint firstItem="wfg-e0-MjG" firstAttribute="bottom" secondItem="4Q8-f1-bmd" secondAttribute="bottom" id="nBY-4b-uSf"/>
+                            <constraint firstItem="4Q8-f1-bmd" firstAttribute="trailing" secondItem="wfg-e0-MjG" secondAttribute="trailing" id="oPn-ZX-tPz"/>
+                            <constraint firstItem="ETB-WQ-PGZ" firstAttribute="leading" secondItem="Naa-PU-axp" secondAttribute="trailing" constant="10" id="qMP-na-oTq"/>
+                            <constraint firstItem="y4N-PD-g8s" firstAttribute="width" secondItem="QO8-vh-cyI" secondAttribute="width" id="sl6-eb-coL"/>
+                            <constraint firstItem="Naa-PU-axp" firstAttribute="leading" secondItem="wfg-e0-MjG" secondAttribute="leading" constant="6" id="vX8-oD-W44"/>
+                            <constraint firstItem="4Q8-f1-bmd" firstAttribute="leading" secondItem="wfg-e0-MjG" secondAttribute="leading" id="wOB-uz-ZjJ"/>
+                            <constraint firstItem="A6o-QH-2BZ" firstAttribute="centerY" secondItem="wfg-e0-MjG" secondAttribute="centerY" id="xcI-DZ-iiI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wfg-e0-MjG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tu4-Se-PbZ"/>
+                    <connections>
+                        <outlet property="btnHamburger" destination="Naa-PU-axp" id="hGS-pX-J6O"/>
+                        <outlet property="indicator" destination="A6o-QH-2BZ" id="U1X-IN-51V"/>
+                        <outlet property="viewContainer" destination="4Q8-f1-bmd" id="YbC-Ns-9OP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eC6-qJ-ie8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982" y="-555"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Menu" width="24" height="17"/>
+        <image name="asel_logo" width="300" height="247"/>
+        <image name="header" width="630" height="355"/>
+    </resources>
+</document>

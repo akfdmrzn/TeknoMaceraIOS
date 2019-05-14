@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tFw-fR-7XX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Keşfet-->
+        <scene sceneID="UPP-3I-nRl">
+            <objects>
+                <viewController storyboardIdentifier="Kesfet" title="Keşfet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tFw-fR-7XX" customClass="KesfetVC" customModule="TeknoMacera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kTC-B0-di8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="9lB-ol-wXE">
+                                <rect key="frame" x="0.0" y="20" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="nkp-gR-7TL"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asel_logo" translatesAutoresizingMaskIntoConstraints="NO" id="j4I-qf-xXU">
+                                <rect key="frame" x="60" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="j4I-qf-xXU" secondAttribute="height" multiplier="1:1" id="aBJ-U2-XNh"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUa-WZ-J57">
+                                <rect key="frame" x="0.0" y="220" width="375" height="447"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vun-Xa-cNK">
+                                <rect key="frame" x="6" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Vun-Xa-cNK" secondAttribute="height" multiplier="1:1" id="pRH-2d-mPO"/>
+                                    <constraint firstAttribute="width" constant="44" id="rnq-DA-58P"/>
+                                </constraints>
+                                <state key="normal" image="Menu"/>
+                                <connections>
+                                    <action selector="openMenu:" destination="tFw-fR-7XX" eventType="touchUpInside" id="E1S-zC-EdP"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="QiS-ZL-Y2w">
+                                <rect key="frame" x="177.5" y="333.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="4Nq-b1-lYR"/>
+                                    <constraint firstAttribute="height" constant="20" id="f7h-Hc-GXQ"/>
+                                </constraints>
+                                <color key="color" red="0.26067504740000003" green="0.27596400119999998" blue="0.68373542750000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BZi-Wn-lMm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" red="0.1450980392" green="0.14901960780000001" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="j4I-qf-xXU" firstAttribute="leading" secondItem="Vun-Xa-cNK" secondAttribute="trailing" constant="10" id="8O1-sh-pK1"/>
+                            <constraint firstItem="9lB-ol-wXE" firstAttribute="width" secondItem="kTC-B0-di8" secondAttribute="width" id="BXu-aU-25Q"/>
+                            <constraint firstItem="eUa-WZ-J57" firstAttribute="trailing" secondItem="iNz-2g-2Xz" secondAttribute="trailing" id="EZG-UX-UEn"/>
+                            <constraint firstItem="9lB-ol-wXE" firstAttribute="centerX" secondItem="iNz-2g-2Xz" secondAttribute="centerX" id="I1Y-5w-dRj"/>
+                            <constraint firstItem="9lB-ol-wXE" firstAttribute="top" secondItem="BZi-Wn-lMm" secondAttribute="bottom" id="JH0-HV-2cV"/>
+                            <constraint firstItem="eUa-WZ-J57" firstAttribute="top" secondItem="9lB-ol-wXE" secondAttribute="bottom" id="Lmd-i2-7zg"/>
+                            <constraint firstItem="iNz-2g-2Xz" firstAttribute="bottom" secondItem="eUa-WZ-J57" secondAttribute="bottom" id="Qzq-Vk-ZLg"/>
+                            <constraint firstItem="BZi-Wn-lMm" firstAttribute="leading" secondItem="kTC-B0-di8" secondAttribute="leading" id="b1I-I4-Fim"/>
+                            <constraint firstItem="9lB-ol-wXE" firstAttribute="top" secondItem="iNz-2g-2Xz" secondAttribute="top" id="hBv-P5-f9o"/>
+                            <constraint firstItem="eUa-WZ-J57" firstAttribute="leading" secondItem="iNz-2g-2Xz" secondAttribute="leading" id="iVX-Qm-glQ"/>
+                            <constraint firstItem="j4I-qf-xXU" firstAttribute="top" secondItem="Vun-Xa-cNK" secondAttribute="top" id="jr9-Ph-mJl"/>
+                            <constraint firstItem="Vun-Xa-cNK" firstAttribute="top" secondItem="iNz-2g-2Xz" secondAttribute="top" id="luQ-rB-NYP"/>
+                            <constraint firstItem="j4I-qf-xXU" firstAttribute="width" secondItem="Vun-Xa-cNK" secondAttribute="width" id="o0e-Sz-K43"/>
+                            <constraint firstItem="Vun-Xa-cNK" firstAttribute="leading" secondItem="iNz-2g-2Xz" secondAttribute="leading" constant="6" id="oPo-ZP-YAC"/>
+                            <constraint firstItem="BZi-Wn-lMm" firstAttribute="top" secondItem="kTC-B0-di8" secondAttribute="top" id="oUu-Bt-T6T"/>
+                            <constraint firstItem="QiS-ZL-Y2w" firstAttribute="centerY" secondItem="iNz-2g-2Xz" secondAttribute="centerY" id="sXL-Rv-Ng2"/>
+                            <constraint firstItem="QiS-ZL-Y2w" firstAttribute="centerX" secondItem="iNz-2g-2Xz" secondAttribute="centerX" id="utP-n6-UuJ"/>
+                            <constraint firstAttribute="trailing" secondItem="BZi-Wn-lMm" secondAttribute="trailing" id="xn0-yd-qmp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iNz-2g-2Xz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xec-BP-K5d"/>
+                    <connections>
+                        <outlet property="btnHamburger" destination="Vun-Xa-cNK" id="BFL-1L-aN0"/>
+                        <outlet property="indicator" destination="QiS-ZL-Y2w" id="6JU-t1-eiN"/>
+                        <outlet property="viewContainer" destination="eUa-WZ-J57" id="s1o-NM-mLa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f4f-qv-zxf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981.60000000000002" y="-555.47226386806597"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Menu" width="24" height="17"/>
+        <image name="asel_logo" width="300" height="247"/>
+        <image name="header" width="630" height="355"/>
+    </resources>
+</document>

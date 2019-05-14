@@ -1,0 +1,16 @@
+PODS:
+  - InteractiveSideMenu (2.3)
+
+DEPENDENCIES:
+  - InteractiveSideMenu
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - InteractiveSideMenu
+
+SPEC CHECKSUMS:
+  InteractiveSideMenu: d503a508c6d62a4d5d4372d9fb9e1795637a8e45
+
+PODFILE CHECKSUM: 23962e8be07d44c55f1ac5b45b461263e2d00f2d
+
+COCOAPODS: 1.5.3

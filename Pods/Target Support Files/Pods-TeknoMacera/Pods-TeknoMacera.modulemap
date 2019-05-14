@@ -1,0 +1,6 @@
+framework module Pods_TeknoMacera {
+  umbrella header "Pods-TeknoMacera-umbrella.h"
+
+  export *
+  module * { export * }
+}

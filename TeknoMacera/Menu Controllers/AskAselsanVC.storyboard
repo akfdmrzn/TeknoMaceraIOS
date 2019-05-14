@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Cb-bN-Pss">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Asel'e Soruyorum-->
+        <scene sceneID="VuW-Fp-qfe">
+            <objects>
+                <viewController storyboardIdentifier="AskAselsan" title="Asel'e Soruyorum" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7Cb-bN-Pss" customClass="AskAselsanVC" customModule="TeknoMacera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="02v-CI-tdj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="cKW-ex-hPt">
+                                <rect key="frame" x="0.0" y="20" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="bsV-xQ-zPG"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crn-WH-mNi">
+                                <rect key="frame" x="0.0" y="220" width="375" height="447"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asel_logo" translatesAutoresizingMaskIntoConstraints="NO" id="BeG-q6-gCj">
+                                <rect key="frame" x="60" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BeG-q6-gCj" secondAttribute="height" multiplier="1:1" id="vYY-B0-k9O"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCE-Sh-efT">
+                                <rect key="frame" x="6" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="ZF4-ZB-OH8"/>
+                                    <constraint firstAttribute="width" secondItem="xCE-Sh-efT" secondAttribute="height" multiplier="1:1" id="eil-CA-oZ2"/>
+                                </constraints>
+                                <state key="normal" image="Menu"/>
+                                <connections>
+                                    <action selector="openMenu:" destination="7Cb-bN-Pss" eventType="touchUpInside" id="OwB-MC-aMB"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="6Cd-It-u2Y">
+                                <rect key="frame" x="177.5" y="333.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Xfe-mh-URf"/>
+                                    <constraint firstAttribute="height" constant="20" id="dya-HY-6Fs"/>
+                                </constraints>
+                                <color key="color" red="0.26067504740000003" green="0.27596400119999998" blue="0.68373542750000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8IZ-vi-i8O">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" red="0.1450980392" green="0.14901960780000001" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="crn-WH-mNi" firstAttribute="leading" secondItem="6xF-xA-O8G" secondAttribute="leading" id="2HX-O3-uzH"/>
+                            <constraint firstItem="BeG-q6-gCj" firstAttribute="leading" secondItem="xCE-Sh-efT" secondAttribute="trailing" constant="10" id="34w-Ff-Mjd"/>
+                            <constraint firstItem="6Cd-It-u2Y" firstAttribute="centerY" secondItem="6xF-xA-O8G" secondAttribute="centerY" id="3u7-2A-XTO"/>
+                            <constraint firstItem="6xF-xA-O8G" firstAttribute="bottom" secondItem="crn-WH-mNi" secondAttribute="bottom" id="49A-Xb-eaT"/>
+                            <constraint firstItem="8IZ-vi-i8O" firstAttribute="leading" secondItem="02v-CI-tdj" secondAttribute="leading" id="5JR-fT-j8J"/>
+                            <constraint firstItem="BeG-q6-gCj" firstAttribute="top" secondItem="xCE-Sh-efT" secondAttribute="top" id="GCV-0b-umI"/>
+                            <constraint firstItem="cKW-ex-hPt" firstAttribute="top" secondItem="6xF-xA-O8G" secondAttribute="top" id="JGB-mD-l4f"/>
+                            <constraint firstItem="BeG-q6-gCj" firstAttribute="width" secondItem="xCE-Sh-efT" secondAttribute="width" id="K1O-92-yJZ"/>
+                            <constraint firstItem="xCE-Sh-efT" firstAttribute="leading" secondItem="6xF-xA-O8G" secondAttribute="leading" constant="6" id="MZC-0B-M5G"/>
+                            <constraint firstItem="cKW-ex-hPt" firstAttribute="width" secondItem="02v-CI-tdj" secondAttribute="width" id="QNm-Qk-fNk"/>
+                            <constraint firstItem="8IZ-vi-i8O" firstAttribute="top" secondItem="02v-CI-tdj" secondAttribute="top" id="aX5-fa-nfb"/>
+                            <constraint firstAttribute="trailing" secondItem="8IZ-vi-i8O" secondAttribute="trailing" id="cHW-ZQ-wro"/>
+                            <constraint firstItem="cKW-ex-hPt" firstAttribute="top" secondItem="8IZ-vi-i8O" secondAttribute="bottom" id="fUg-g6-edK"/>
+                            <constraint firstItem="xCE-Sh-efT" firstAttribute="top" secondItem="6xF-xA-O8G" secondAttribute="top" id="kdN-l6-3gb"/>
+                            <constraint firstItem="6Cd-It-u2Y" firstAttribute="centerX" secondItem="6xF-xA-O8G" secondAttribute="centerX" id="nbU-yP-pE9"/>
+                            <constraint firstItem="cKW-ex-hPt" firstAttribute="centerX" secondItem="6xF-xA-O8G" secondAttribute="centerX" id="orr-k4-u8u"/>
+                            <constraint firstItem="crn-WH-mNi" firstAttribute="top" secondItem="cKW-ex-hPt" secondAttribute="bottom" id="w4c-Ae-5jB"/>
+                            <constraint firstItem="crn-WH-mNi" firstAttribute="trailing" secondItem="6xF-xA-O8G" secondAttribute="trailing" id="w7V-6N-gmP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6xF-xA-O8G"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QJU-w8-4Zy"/>
+                    <connections>
+                        <outlet property="btnHamburger" destination="xCE-Sh-efT" id="6wp-QS-Nh0"/>
+                        <outlet property="indicator" destination="6Cd-It-u2Y" id="ikQ-HL-ieK"/>
+                        <outlet property="viewContainer" destination="crn-WH-mNi" id="jca-B1-6XU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qLP-Ki-5J5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981.60000000000002" y="-555.47226386806597"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Menu" width="24" height="17"/>
+        <image name="asel_logo" width="300" height="247"/>
+        <image name="header" width="630" height="355"/>
+    </resources>
+</document>
