@@ -1,16 +1,24 @@
 PODS:
+  - CircleMenu (4.1.0)
   - InteractiveSideMenu (2.3)
+  - lottie-ios (3.0.4)
 
 DEPENDENCIES:
+  - CircleMenu
   - InteractiveSideMenu
+  - lottie-ios
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - CircleMenu
     - InteractiveSideMenu
+    - lottie-ios
 
 SPEC CHECKSUMS:
+  CircleMenu: a66095199a5e26f19acbb212f077010257767fe5
   InteractiveSideMenu: d503a508c6d62a4d5d4372d9fb9e1795637a8e45
+  lottie-ios: 55a2de40418f8de2b155efaba4d4d1a025a5c570
 
-PODFILE CHECKSUM: 23962e8be07d44c55f1ac5b45b461263e2d00f2d
+PODFILE CHECKSUM: f280272bc132c7e2d56f017d3c2a977b4748257c
 
 COCOAPODS: 1.5.3

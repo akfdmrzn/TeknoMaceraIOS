@@ -33,6 +33,12 @@
 		4FDA85F6228B495200B246AD /* SampleMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA85F3228B495200B246AD /* SampleMenuViewController.swift */; };
 		4FDA85F7228B495200B246AD /* HostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA85F4228B495200B246AD /* HostViewController.swift */; };
 		4FDA85F8228B495200B246AD /* SampleMenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA85F5228B495200B246AD /* SampleMenuViewController.storyboard */; };
+		4FDA85FA228CB4A800B246AD /* robot.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA85F9228CB4A800B246AD /* robot.json */; };
+		4FDA85FC228CC9D400B246AD /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA85FB228CC9D400B246AD /* Reachability.swift */; };
+		4FDA8600228CCC2800B246AD /* MainPageVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA85FF228CCC2800B246AD /* MainPageVC.storyboard */; };
+		4FDA8603228CCE6A00B246AD /* MainPageCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA8601228CCE6A00B246AD /* MainPageCellTableViewCell.swift */; };
+		4FDA8604228CCE6A00B246AD /* MainPageCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA8602228CCE6A00B246AD /* MainPageCellTableViewCell.xib */; };
+		4FDA8606228CD2A500B246AD /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA8605228CD2A500B246AD /* MainPageVC.swift */; };
 		69D6FC98BD6FC2E25BA1524D /* Pods_TeknoMaceraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4595673B446991C35F694A58 /* Pods_TeknoMaceraUITests.framework */; };
 		A63C8024357705E86135C8DA /* Pods_TeknoMaceraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1F783C7961A477B9BA4975 /* Pods_TeknoMaceraTests.framework */; };
 		F8A097882AF66873693B075F /* Pods_TeknoMacera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5D65C6EC0B1471C17BC390 /* Pods_TeknoMacera.framework */; };
@@ -94,6 +100,12 @@
 		4FDA85F3228B495200B246AD /* SampleMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleMenuViewController.swift; sourceTree = "<group>"; };
 		4FDA85F4228B495200B246AD /* HostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostViewController.swift; sourceTree = "<group>"; };
 		4FDA85F5228B495200B246AD /* SampleMenuViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SampleMenuViewController.storyboard; sourceTree = "<group>"; };
+		4FDA85F9228CB4A800B246AD /* robot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = robot.json; sourceTree = "<group>"; };
+		4FDA85FB228CC9D400B246AD /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		4FDA85FF228CCC2800B246AD /* MainPageVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainPageVC.storyboard; sourceTree = "<group>"; };
+		4FDA8601228CCE6A00B246AD /* MainPageCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageCellTableViewCell.swift; sourceTree = "<group>"; };
+		4FDA8602228CCE6A00B246AD /* MainPageCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageCellTableViewCell.xib; sourceTree = "<group>"; };
+		4FDA8605228CD2A500B246AD /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
 		5B0725809A0D76921076CE23 /* Pods-TeknoMacera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeknoMacera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeknoMacera/Pods-TeknoMacera.debug.xcconfig"; sourceTree = "<group>"; };
 		F1D43A486EF4A9D02999AB84 /* Pods-TeknoMaceraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeknoMaceraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeknoMaceraTests/Pods-TeknoMaceraTests.release.xcconfig"; sourceTree = "<group>"; };
 		FE1F783C7961A477B9BA4975 /* Pods_TeknoMaceraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeknoMaceraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,8 +164,8 @@
 		4FDA8598228B485700B246AD /* TeknoMacera */ = {
 			isa = PBXGroup;
 			children = (
+				4FDA85F9228CB4A800B246AD /* robot.json */,
 				4FDA85D2228B492A00B246AD /* Helpers */,
-				4FDA85D1228B492600B246AD /* Cells */,
 				4FDA85D0228B492000B246AD /* Menu Controllers */,
 				4FDA85CF228B491A00B246AD /* Controllers */,
 				4FDA8599228B485700B246AD /* AppDelegate.swift */,
@@ -197,6 +209,7 @@
 		4FDA85D0228B492000B246AD /* Menu Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4FDA85D1228B492600B246AD /* Cells */,
 				4FDA85DC228B494600B246AD /* KittyViewController.storyboard */,
 				4FDA85DB228B494500B246AD /* KittyViewController.swift */,
 				4FDA85DA228B494500B246AD /* WatchLearnVC.storyboard */,
@@ -211,6 +224,8 @@
 				4FDA85DE228B494600B246AD /* RegisterVC.swift */,
 				4FDA85E4228B494600B246AD /* AskAselsanVC.storyboard */,
 				4FDA85DF228B494600B246AD /* AskAselsanVC.swift */,
+				4FDA85FF228CCC2800B246AD /* MainPageVC.storyboard */,
+				4FDA8605228CD2A500B246AD /* MainPageVC.swift */,
 			);
 			path = "Menu Controllers";
 			sourceTree = "<group>";
@@ -219,6 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				4FDA85D5228B493B00B246AD /* SampleTableCell.swift */,
+				4FDA8601228CCE6A00B246AD /* MainPageCellTableViewCell.swift */,
+				4FDA8602228CCE6A00B246AD /* MainPageCellTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -227,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				4FDA85D3228B493500B246AD /* Storyboardable.swift */,
+				4FDA85FB228CC9D400B246AD /* Reachability.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -363,14 +381,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FDA85A4228B485900B246AD /* LaunchScreen.storyboard in Resources */,
+				4FDA8600228CCC2800B246AD /* MainPageVC.storyboard in Resources */,
 				4FDA85F2228B494600B246AD /* AskAselsanVC.storyboard in Resources */,
 				4FDA85EE228B494600B246AD /* KesfetVC.storyboard in Resources */,
 				4FDA85EA228B494600B246AD /* KittyViewController.storyboard in Resources */,
+				4FDA85FA228CB4A800B246AD /* robot.json in Resources */,
 				4FDA85A1228B485900B246AD /* Assets.xcassets in Resources */,
 				4FDA85E7228B494600B246AD /* EtkinlikVC.storyboard in Resources */,
 				4FDA85E8228B494600B246AD /* WatchLearnVC.storyboard in Resources */,
 				4FDA85E6228B494600B246AD /* PlayGameVC.storyboard in Resources */,
 				4FDA85E5228B494600B246AD /* RegisterVC.storyboard in Resources */,
+				4FDA8604228CCE6A00B246AD /* MainPageCellTableViewCell.xib in Resources */,
 				4FDA859F228B485700B246AD /* Main.storyboard in Resources */,
 				4FDA85F8228B495200B246AD /* SampleMenuViewController.storyboard in Resources */,
 			);
@@ -468,13 +489,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TeknoMacera/Pods-TeknoMacera-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CircleMenu/CircleMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/InteractiveSideMenu/InteractiveSideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircleMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InteractiveSideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -488,11 +513,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FDA85FC228CC9D400B246AD /* Reachability.swift in Sources */,
 				4FDA859C228B485700B246AD /* ViewController.swift in Sources */,
 				4FDA85D4228B493500B246AD /* Storyboardable.swift in Sources */,
 				4FDA85D6228B493B00B246AD /* SampleTableCell.swift in Sources */,
 				4FDA85EF228B494600B246AD /* EtkinlikVC.swift in Sources */,
 				4FDA85F0228B494600B246AD /* KesfetVC.swift in Sources */,
+				4FDA8606228CD2A500B246AD /* MainPageVC.swift in Sources */,
 				4FDA85E9228B494600B246AD /* KittyViewController.swift in Sources */,
 				4FDA85F1228B494600B246AD /* WatchLearnVC.swift in Sources */,
 				4FDA85F6228B495200B246AD /* SampleMenuViewController.swift in Sources */,
@@ -501,6 +528,7 @@
 				4FDA85EC228B494600B246AD /* RegisterVC.swift in Sources */,
 				4FDA85EB228B494600B246AD /* PlayGameVC.swift in Sources */,
 				4FDA859A228B485700B246AD /* AppDelegate.swift in Sources */,
+				4FDA8603228CCE6A00B246AD /* MainPageCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,11 +707,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65TH5D9393;
 				INFOPLIST_FILE = TeknoMacera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aselsanTekno.TeknoMacera;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teknomacera.aselsan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -698,11 +727,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65TH5D9393;
 				INFOPLIST_FILE = TeknoMacera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aselsanTekno.TeknoMacera;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teknomacera.aselsan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

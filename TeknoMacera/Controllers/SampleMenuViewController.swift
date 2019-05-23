@@ -82,7 +82,7 @@ extension SampleMenuViewController: UITableViewDelegate, UITableViewDataSource {
             preconditionFailure("Unregistered table view cell")
         }
         
-        cell.titleLabel.text = menuContainerViewController?.contentViewControllers[indexPath.row].title ?? "A Controller"
+        cell.titleLabel.text = menuContainerViewController?.contentViewControllers[indexPath.row].title
 
         return cell
     }

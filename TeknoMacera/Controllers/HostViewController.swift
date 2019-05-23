@@ -64,14 +64,14 @@ class HostViewController: MenuContainerViewController {
     }
 
     private func contentControllers() -> [UIViewController] {
-        let kittyController = KittyViewController.storyboardViewController()
-        let watchLearnController = WatchLearnVC.storyboardViewController()
-        let playGameController = PlayGameVC.storyboardViewController()
-        let etkinlikController = EtkinlikVC.storyboardViewController()
-        let kesfetController = KesfetVC.storyboardViewController()
-        let registerController = RegisterVC.storyboardViewController()
-        let askAselsanVCController = AskAselsanVC.storyboardViewController()
+        let mainPageController = MainPageVC.storyboardNavigationController()
+        let watchLearnController = WatchLearnVC.storyboardNavigationController()
+        let playGameController = PlayGameVC.storyboardNavigationController()
+        let etkinlikController = EtkinlikVC.storyboardNavigationController()
+        let kesfetController = KesfetVC.storyboardNavigationController()
+        let registerController = RegisterVC.storyboardNavigationController()
+        let askAselsanVCController = AskAselsanVC.storyboardNavigationController()
         
-        return [kittyController, watchLearnController, playGameController,etkinlikController,kesfetController,registerController,askAselsanVCController]
+        return [mainPageController, watchLearnController, playGameController,etkinlikController,kesfetController,registerController,askAselsanVCController]
     }
 }

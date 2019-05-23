@@ -7,6 +7,8 @@ target 'TeknoMacera' do
 
   # Pods for TeknoMacera
 pod 'InteractiveSideMenu'
+pod 'lottie-ios'
+pod 'CircleMenu'
   target 'TeknoMaceraTests' do
     inherit! :search_paths
     # Pods for testing
