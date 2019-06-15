@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="kesfetCollectionViewCell" customModule="TeknoMacera" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="351"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="388" height="351"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l6Q-By-VhS">
+                        <rect key="frame" x="29" y="22.5" width="330" height="316"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jdu-R8-Hyg">
+                                <rect key="frame" x="49.5" y="0.0" width="231" height="231"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jdu-R8-Hyg" secondAttribute="height" multiplier="1:1" id="Odz-bs-m5M"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REB-HW-7x2">
+                                <rect key="frame" x="0.0" y="231" width="330" height="85"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" red="0.45023045220000002" green="0.20352374640000001" blue="0.50864232509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45023045220261398" green="0.20352374643724175" blue="0.50864232512953367" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="REB-HW-7x2" secondAttribute="bottom" id="Kkh-ia-ceG"/>
+                            <constraint firstItem="REB-HW-7x2" firstAttribute="leading" secondItem="l6Q-By-VhS" secondAttribute="leading" id="Svg-LL-eYh"/>
+                            <constraint firstItem="Jdu-R8-Hyg" firstAttribute="top" secondItem="l6Q-By-VhS" secondAttribute="top" id="axK-ad-q4C"/>
+                            <constraint firstAttribute="trailing" secondItem="REB-HW-7x2" secondAttribute="trailing" id="eHd-j1-q9e"/>
+                            <constraint firstItem="Jdu-R8-Hyg" firstAttribute="centerX" secondItem="l6Q-By-VhS" secondAttribute="centerX" id="eIP-02-JAX"/>
+                            <constraint firstItem="REB-HW-7x2" firstAttribute="top" secondItem="Jdu-R8-Hyg" secondAttribute="bottom" id="nVM-ll-g7s"/>
+                            <constraint firstItem="Jdu-R8-Hyg" firstAttribute="width" secondItem="l6Q-By-VhS" secondAttribute="width" multiplier="0.7" id="s6b-2j-wvP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="l6Q-By-VhS" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="9vT-Wo-zGi"/>
+                <constraint firstItem="l6Q-By-VhS" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.9" id="Hcq-xp-ojk"/>
+                <constraint firstItem="l6Q-By-VhS" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.85" id="WSn-kT-NTi"/>
+                <constraint firstItem="l6Q-By-VhS" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="hVf-pL-ZDv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="388" height="351"/>
+            <connections>
+                <outlet property="containerView" destination="l6Q-By-VhS" id="msH-hA-IVT"/>
+                <outlet property="imageViewLogo" destination="Jdu-R8-Hyg" id="i4F-jJ-F7I"/>
+                <outlet property="labelTitle" destination="REB-HW-7x2" id="0Rq-nS-BQS"/>
+            </connections>
+            <point key="canvasLocation" x="69.565217391304358" y="131.58482142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

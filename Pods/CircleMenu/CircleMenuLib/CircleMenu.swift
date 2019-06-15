@@ -166,7 +166,7 @@ open class CircleMenu: UIButton {
         customNormalIconView = addCustomImageView(state: .normal)
 
         customSelectedIconView = addCustomImageView(state: .selected)
-        customSelectedIconView?.alpha = 1
+        customSelectedIconView?.alpha = 0
 
         setImage(UIImage(), for: .normal)
         setImage(UIImage(), for: .selected)
@@ -232,7 +232,7 @@ open class CircleMenu: UIButton {
             let button = customize(CircleMenuButton(size: buttonSize, platform: platform, distance: distance, angle: angle)) {
                 $0.tag = index
                 $0.addTarget(self, action: #selector(CircleMenu.buttonHandler(_:)), for: UIControl.Event.touchUpInside)
-                $0.alpha = 1
+                $0.alpha = 0
             }
             buttons.append(button)
         }
@@ -477,7 +477,7 @@ open class CircleMenu: UIButton {
         }
 
         self.isSelected = isSelected
-        alpha = isSelected ? 1 : 1
+        alpha = isSelected ? 0.3 : 1
     }
 
     fileprivate func hideCenterButton(duration: Double, delay: Double = 0) {

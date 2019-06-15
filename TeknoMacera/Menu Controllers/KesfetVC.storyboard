@@ -27,14 +27,66 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUa-WZ-J57">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="HTn-Ky-cPa">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerkesfet" translatesAutoresizingMaskIntoConstraints="NO" id="HTn-Ky-cPa">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="tiI-oC-A0u"/>
+                                        </constraints>
                                     </imageView>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WH1-9N-4DW">
+                                        <rect key="frame" x="0.0" y="150" width="375" height="413"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="t0x-DH-C6Q">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="DQc-lG-tCz">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </view>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asel_logo" translatesAutoresizingMaskIntoConstraints="NO" id="auh-xi-wQx">
+                                        <rect key="frame" x="175" y="573" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="JYM-eO-XPS"/>
+                                            <constraint firstAttribute="height" constant="25" id="zRO-37-p3w"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beraber Keşfedelim!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dK1-Ce-CWL">
+                                        <rect key="frame" x="104.5" y="49" width="166" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SR3-cf-qM9">
+                                        <rect key="frame" x="37.5" y="70" width="300" height="43"/>
+                                        <string key="text">Bilişim teknolojileleri öğretmeni ve yazarı Yeşim Özen Açıl sizler için hazırladı! Teknoloji ve dijital dünya'ya ait blog yazılarını bu sayfada okuyabilirsiniz.</string>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="HTn-Ky-cPa" secondAttribute="trailing" id="23Z-fa-jbt"/>
-                                    <constraint firstAttribute="bottom" secondItem="HTn-Ky-cPa" secondAttribute="bottom" id="XW6-q1-HgA"/>
+                                    <constraint firstItem="SR3-cf-qM9" firstAttribute="width" secondItem="HTn-Ky-cPa" secondAttribute="width" multiplier="0.8" id="4vO-2t-MrM"/>
+                                    <constraint firstItem="SR3-cf-qM9" firstAttribute="top" secondItem="dK1-Ce-CWL" secondAttribute="bottom" id="4wK-of-2bk"/>
+                                    <constraint firstAttribute="trailing" secondItem="WH1-9N-4DW" secondAttribute="trailing" id="7au-b4-x6h"/>
+                                    <constraint firstAttribute="bottom" secondItem="WH1-9N-4DW" secondAttribute="bottom" constant="40" id="9y6-rX-HKa"/>
+                                    <constraint firstItem="WH1-9N-4DW" firstAttribute="top" secondItem="HTn-Ky-cPa" secondAttribute="bottom" id="DFP-6v-OmF"/>
+                                    <constraint firstItem="auh-xi-wQx" firstAttribute="centerX" secondItem="eUa-WZ-J57" secondAttribute="centerX" id="MgO-bo-bjX"/>
+                                    <constraint firstItem="SR3-cf-qM9" firstAttribute="centerX" secondItem="dK1-Ce-CWL" secondAttribute="centerX" id="OJb-hM-sB6"/>
+                                    <constraint firstItem="dK1-Ce-CWL" firstAttribute="centerX" secondItem="HTn-Ky-cPa" secondAttribute="centerX" id="ZCa-Ul-Gfs"/>
+                                    <constraint firstItem="auh-xi-wQx" firstAttribute="top" secondItem="WH1-9N-4DW" secondAttribute="bottom" constant="10" id="eJf-Ay-S5y"/>
+                                    <constraint firstItem="WH1-9N-4DW" firstAttribute="leading" secondItem="eUa-WZ-J57" secondAttribute="leading" id="kdx-Y1-KBs"/>
                                     <constraint firstItem="HTn-Ky-cPa" firstAttribute="leading" secondItem="eUa-WZ-J57" secondAttribute="leading" id="tiE-c8-dbd"/>
                                     <constraint firstItem="HTn-Ky-cPa" firstAttribute="top" secondItem="eUa-WZ-J57" secondAttribute="top" id="yXM-jN-RnU"/>
                                 </constraints>
@@ -72,6 +124,7 @@
                             </view>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="dK1-Ce-CWL" firstAttribute="top" secondItem="Vun-Xa-cNK" secondAttribute="bottom" constant="5" id="8hV-io-bex"/>
                             <constraint firstItem="9lB-ol-wXE" firstAttribute="width" secondItem="kTC-B0-di8" secondAttribute="width" id="BXu-aU-25Q"/>
                             <constraint firstItem="eUa-WZ-J57" firstAttribute="trailing" secondItem="iNz-2g-2Xz" secondAttribute="trailing" id="EZG-UX-UEn"/>
                             <constraint firstItem="9lB-ol-wXE" firstAttribute="centerX" secondItem="iNz-2g-2Xz" secondAttribute="centerX" id="I1Y-5w-dRj"/>
@@ -95,6 +148,7 @@
                     <navigationItem key="navigationItem" title="Keşfet" id="Xec-BP-K5d"/>
                     <connections>
                         <outlet property="btnHamburger" destination="Vun-Xa-cNK" id="BFL-1L-aN0"/>
+                        <outlet property="collectionViewKesfet" destination="WH1-9N-4DW" id="6kc-wi-mBd"/>
                         <outlet property="indicator" destination="QiS-ZL-Y2w" id="6JU-t1-eiN"/>
                         <outlet property="lottieView" destination="ANB-7Z-w9M" id="8ud-Zr-6Ad"/>
                         <outlet property="viewContainer" destination="eUa-WZ-J57" id="s1o-NM-mLa"/>
@@ -125,7 +179,8 @@
     </scenes>
     <resources>
         <image name="Menu" width="24" height="17"/>
-        <image name="gradient" width="1920" height="1080"/>
+        <image name="asel_logo" width="300" height="247"/>
+        <image name="bannerkesfet" width="960" height="540"/>
         <image name="header" width="630" height="355"/>
     </resources>
 </document>

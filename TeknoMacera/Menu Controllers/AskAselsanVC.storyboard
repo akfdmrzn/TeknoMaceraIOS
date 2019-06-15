@@ -45,14 +45,104 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZT-ON-u4Y">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="1zb-JL-pSQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aselesor" translatesAutoresizingMaskIntoConstraints="NO" id="1zb-JL-pSQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="58d-Un-SBT"/>
+                                        </constraints>
                                     </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhw-Zu-mFk">
+                                        <rect key="frame" x="0.0" y="140" width="375" height="463"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adınız Soyadınız" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZpC-9M-cDA">
+                                                <rect key="frame" x="87.5" y="20" width="200" height="35"/>
+                                                <color key="backgroundColor" red="0.68235294117647061" green="0.27450980392156865" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="NJt-js-B0F"/>
+                                                    <constraint firstAttribute="width" constant="200" id="PQR-f3-1uE"/>
+                                                </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Posta Adresiniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xe1-un-wxC">
+                                                <rect key="frame" x="87.5" y="70" width="200" height="35"/>
+                                                <color key="backgroundColor" red="0.68235294120000001" green="0.27450980390000002" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="0rA-vh-xO4"/>
+                                                    <constraint firstAttribute="width" constant="200" id="kso-nQ-aLL"/>
+                                                </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Konu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kAM-Oh-a5T">
+                                                <rect key="frame" x="87.5" y="120" width="200" height="35"/>
+                                                <color key="backgroundColor" red="0.68235294120000001" green="0.27450980390000002" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="7Sv-OH-uQL"/>
+                                                    <constraint firstAttribute="width" constant="200" id="9Ry-hN-gJC"/>
+                                                </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Asele Sor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uiD-B9-AKy">
+                                                <rect key="frame" x="87.5" y="170" width="200" height="80"/>
+                                                <color key="backgroundColor" red="0.68235294120000001" green="0.27450980390000002" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="MiF-f4-bOb"/>
+                                                    <constraint firstAttribute="width" constant="200" id="uG8-5L-9jz"/>
+                                                </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELd-YJ-Nlr">
+                                                <rect key="frame" x="87.5" y="270" width="200" height="35"/>
+                                                <color key="backgroundColor" red="0.68235294120000001" green="0.27450980390000002" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <state key="normal" title="Asele Sor">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnAskAsel:" destination="k6i-HU-KFz" eventType="touchUpInside" id="GAO-Dr-jGy"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asel_logo" translatesAutoresizingMaskIntoConstraints="NO" id="08M-lj-9EE">
+                                                <rect key="frame" x="167.5" y="413" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="gbk-dQ-Mpd"/>
+                                                    <constraint firstAttribute="height" constant="40" id="lQh-EG-c85"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="kAM-Oh-a5T" firstAttribute="top" secondItem="Xe1-un-wxC" secondAttribute="bottom" constant="15" id="1IX-QL-bbL"/>
+                                            <constraint firstItem="ZpC-9M-cDA" firstAttribute="top" secondItem="mhw-Zu-mFk" secondAttribute="top" constant="20" id="2Wk-oe-jGI"/>
+                                            <constraint firstItem="uiD-B9-AKy" firstAttribute="top" secondItem="kAM-Oh-a5T" secondAttribute="bottom" constant="15" id="3rD-PV-YNi"/>
+                                            <constraint firstItem="ELd-YJ-Nlr" firstAttribute="centerX" secondItem="uiD-B9-AKy" secondAttribute="centerX" id="7vC-Kf-qWQ"/>
+                                            <constraint firstItem="kAM-Oh-a5T" firstAttribute="centerX" secondItem="Xe1-un-wxC" secondAttribute="centerX" id="Bg5-Sk-wkr"/>
+                                            <constraint firstAttribute="bottom" secondItem="08M-lj-9EE" secondAttribute="bottom" constant="10" id="FFM-qB-tnL"/>
+                                            <constraint firstItem="uiD-B9-AKy" firstAttribute="centerX" secondItem="kAM-Oh-a5T" secondAttribute="centerX" id="HPK-iZ-57E"/>
+                                            <constraint firstItem="08M-lj-9EE" firstAttribute="centerX" secondItem="mhw-Zu-mFk" secondAttribute="centerX" id="ZG2-ei-5Bc"/>
+                                            <constraint firstItem="Xe1-un-wxC" firstAttribute="top" secondItem="ZpC-9M-cDA" secondAttribute="bottom" constant="15" id="fQr-u5-KQx"/>
+                                            <constraint firstItem="Xe1-un-wxC" firstAttribute="centerX" secondItem="ZpC-9M-cDA" secondAttribute="centerX" id="qU7-De-IgU"/>
+                                            <constraint firstItem="ELd-YJ-Nlr" firstAttribute="width" secondItem="kAM-Oh-a5T" secondAttribute="width" id="uIY-mm-YpE"/>
+                                            <constraint firstItem="ZpC-9M-cDA" firstAttribute="centerX" secondItem="mhw-Zu-mFk" secondAttribute="centerX" id="vR4-kN-lRZ"/>
+                                            <constraint firstItem="ELd-YJ-Nlr" firstAttribute="top" secondItem="uiD-B9-AKy" secondAttribute="bottom" constant="20" id="xat-tf-gNH"/>
+                                            <constraint firstItem="ELd-YJ-Nlr" firstAttribute="height" secondItem="kAM-Oh-a5T" secondAttribute="height" id="yzP-yd-MhN"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="mhw-Zu-mFk" firstAttribute="leading" secondItem="CZT-ON-u4Y" secondAttribute="leading" id="32Y-0E-RhK"/>
                                     <constraint firstItem="1zb-JL-pSQ" firstAttribute="leading" secondItem="CZT-ON-u4Y" secondAttribute="leading" id="92e-ps-eBN"/>
-                                    <constraint firstAttribute="bottom" secondItem="1zb-JL-pSQ" secondAttribute="bottom" id="pFk-d3-4G8"/>
+                                    <constraint firstItem="mhw-Zu-mFk" firstAttribute="top" secondItem="1zb-JL-pSQ" secondAttribute="bottom" id="99f-zX-71K"/>
+                                    <constraint firstAttribute="bottom" secondItem="mhw-Zu-mFk" secondAttribute="bottom" id="bBG-dq-p0E"/>
+                                    <constraint firstAttribute="trailing" secondItem="mhw-Zu-mFk" secondAttribute="trailing" id="h4x-i8-fTv"/>
                                     <constraint firstItem="1zb-JL-pSQ" firstAttribute="top" secondItem="CZT-ON-u4Y" secondAttribute="top" id="poW-Lg-iXS"/>
                                     <constraint firstAttribute="trailing" secondItem="1zb-JL-pSQ" secondAttribute="trailing" id="yNO-se-zFj"/>
                                 </constraints>
@@ -115,6 +205,10 @@
                         <outlet property="btnHamburger" destination="pap-bG-60U" id="LoG-RT-ama"/>
                         <outlet property="indicator" destination="9mD-ue-BSr" id="pTk-ne-BHm"/>
                         <outlet property="lottieView" destination="r09-Em-0Cy" id="3mO-VO-zoF"/>
+                        <outlet property="txtFieldEposta" destination="Xe1-un-wxC" id="X9n-EJ-5u8"/>
+                        <outlet property="txtFieldName" destination="ZpC-9M-cDA" id="e3I-KV-ivh"/>
+                        <outlet property="txtFieldSoru" destination="uiD-B9-AKy" id="WJp-EO-kXC"/>
+                        <outlet property="txtFieldtKonu" destination="kAM-Oh-a5T" id="x47-WA-j8K"/>
                         <outlet property="viewContainer" destination="CZT-ON-u4Y" id="mNw-MT-CzE"/>
                     </connections>
                 </viewController>
@@ -125,7 +219,8 @@
     </scenes>
     <resources>
         <image name="Menu" width="24" height="17"/>
-        <image name="gradient" width="1920" height="1080"/>
+        <image name="asel_logo" width="300" height="247"/>
+        <image name="aselesor" width="949.5" height="348"/>
         <image name="header" width="630" height="355"/>
     </resources>
 </document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Oyun Oyna-->
+        <scene sceneID="i6C-kR-4Jg">
+            <objects>
+                <viewController storyboardIdentifier="YoutubeViewController" title="Oyun Oyna" id="GZ0-Q9-M1u" customClass="YoutubeViewController" customModule="TeknoMacera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cdK-bM-HX8">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfp-VY-WzQ">
+                                <rect key="frame" x="44" y="50" width="808" height="343"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="b1I-ag-pe5">
+                                <rect key="frame" x="438" y="186.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="dKq-t4-uhx"/>
+                                    <constraint firstAttribute="height" constant="20" id="paK-6v-OqH"/>
+                                </constraints>
+                                <color key="color" red="0.26067504740000003" green="0.27596400119999998" blue="0.68373542750000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qez-xR-tie">
+                                <rect key="frame" x="44" y="10" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="6qP-Gm-XWv"/>
+                                    <constraint firstAttribute="height" constant="30" id="Fme-ka-Sjh"/>
+                                </constraints>
+                                <state key="normal" title="Kapat"/>
+                                <connections>
+                                    <action selector="btnKapatAct:" destination="GZ0-Q9-M1u" eventType="touchUpInside" id="1Ah-wW-THg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tfp-VY-WzQ" firstAttribute="leading" secondItem="5kg-5Z-6tI" secondAttribute="leading" id="CVJ-ZB-7Ng"/>
+                            <constraint firstItem="Qez-xR-tie" firstAttribute="top" secondItem="5kg-5Z-6tI" secondAttribute="top" constant="10" id="ESc-o0-EJD"/>
+                            <constraint firstItem="5kg-5Z-6tI" firstAttribute="bottom" secondItem="tfp-VY-WzQ" secondAttribute="bottom" id="YzF-0c-qwu"/>
+                            <constraint firstItem="b1I-ag-pe5" firstAttribute="centerX" secondItem="5kg-5Z-6tI" secondAttribute="centerX" id="cyh-pk-E6k"/>
+                            <constraint firstItem="5kg-5Z-6tI" firstAttribute="trailing" secondItem="tfp-VY-WzQ" secondAttribute="trailing" id="gza-jo-BeD"/>
+                            <constraint firstItem="b1I-ag-pe5" firstAttribute="centerY" secondItem="5kg-5Z-6tI" secondAttribute="centerY" id="jEf-ng-MGd"/>
+                            <constraint firstItem="Qez-xR-tie" firstAttribute="leading" secondItem="tfp-VY-WzQ" secondAttribute="leading" id="kvT-9v-yZd"/>
+                            <constraint firstItem="tfp-VY-WzQ" firstAttribute="top" secondItem="5kg-5Z-6tI" secondAttribute="top" constant="50" id="p0E-1x-oFK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5kg-5Z-6tI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QIu-m0-VoT"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="indicator" destination="b1I-ag-pe5" id="RUo-cd-2Lm"/>
+                        <outlet property="webview" destination="tfp-VY-WzQ" id="5o4-86-mXy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K3H-AA-Odn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3471.0144927536235" y="-537.05357142857144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qVh-rr-yxO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JFd-Q4-TGO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VP3-Bb-Qyt">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GZ0-Q9-M1u" kind="relationship" relationship="rootViewController" id="RF8-KD-eSW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u4Q-dE-E6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2560.8695652173915" y="-537.05357142857144"/>
+        </scene>
+    </scenes>
+</document>

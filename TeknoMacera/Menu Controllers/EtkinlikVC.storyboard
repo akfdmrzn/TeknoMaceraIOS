@@ -27,15 +27,46 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Q8-f1-bmd">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="fBC-ym-5QG">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="etkinlikbanner" translatesAutoresizingMaskIntoConstraints="NO" id="fBC-ym-5QG">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="iDc-ii-9uR"/>
+                                        </constraints>
                                     </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qS7-rB-bJA">
+                                        <rect key="frame" x="0.0" y="150" width="375" height="453"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZQU-4C-HVQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="403"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </tableView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asel_logo" translatesAutoresizingMaskIntoConstraints="NO" id="jGL-Pa-jBW">
+                                                <rect key="frame" x="175" y="413" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="97c-2z-lGe"/>
+                                                    <constraint firstAttribute="width" constant="25" id="tKR-vr-rFA"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ZQU-4C-HVQ" firstAttribute="leading" secondItem="qS7-rB-bJA" secondAttribute="leading" id="2ts-TU-3rC"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZQU-4C-HVQ" secondAttribute="trailing" id="cli-rU-BMM"/>
+                                            <constraint firstItem="jGL-Pa-jBW" firstAttribute="top" secondItem="ZQU-4C-HVQ" secondAttribute="bottom" constant="10" id="duw-7d-udw"/>
+                                            <constraint firstItem="ZQU-4C-HVQ" firstAttribute="top" secondItem="qS7-rB-bJA" secondAttribute="top" id="h0P-2f-Bek"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZQU-4C-HVQ" secondAttribute="bottom" constant="50" id="lv0-T2-YvZ"/>
+                                            <constraint firstItem="jGL-Pa-jBW" firstAttribute="centerX" secondItem="qS7-rB-bJA" secondAttribute="centerX" id="up9-cP-QxP"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="qS7-rB-bJA" firstAttribute="top" secondItem="fBC-ym-5QG" secondAttribute="bottom" id="4OG-P4-DNk"/>
+                                    <constraint firstAttribute="trailing" secondItem="qS7-rB-bJA" secondAttribute="trailing" id="5YT-xd-bF7"/>
+                                    <constraint firstItem="qS7-rB-bJA" firstAttribute="leading" secondItem="4Q8-f1-bmd" secondAttribute="leading" id="FK2-d7-ayA"/>
                                     <constraint firstItem="fBC-ym-5QG" firstAttribute="leading" secondItem="4Q8-f1-bmd" secondAttribute="leading" id="J0h-sg-MxG"/>
+                                    <constraint firstAttribute="bottom" secondItem="qS7-rB-bJA" secondAttribute="bottom" id="Oo9-ai-XhM"/>
                                     <constraint firstItem="fBC-ym-5QG" firstAttribute="top" secondItem="4Q8-f1-bmd" secondAttribute="top" id="X0f-5W-HL4"/>
-                                    <constraint firstAttribute="bottom" secondItem="fBC-ym-5QG" secondAttribute="bottom" id="mDd-L6-wxM"/>
                                     <constraint firstAttribute="trailing" secondItem="fBC-ym-5QG" secondAttribute="trailing" id="zvP-Ch-cEA"/>
                                 </constraints>
                             </view>
@@ -60,7 +91,7 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipL-rf-M6L">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
-                                <color key="backgroundColor" red="0.1450980392" green="0.14901960780000001" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdU-Xw-14L" customClass="AnimationView" customModule="Lottie">
                                 <rect key="frame" x="127.5" y="305.5" width="120" height="120"/>
@@ -97,6 +128,7 @@
                         <outlet property="btnHamburger" destination="Naa-PU-axp" id="hGS-pX-J6O"/>
                         <outlet property="indicator" destination="A6o-QH-2BZ" id="U1X-IN-51V"/>
                         <outlet property="lottieView" destination="vdU-Xw-14L" id="Q6b-AX-tYw"/>
+                        <outlet property="tableView" destination="ZQU-4C-HVQ" id="KXV-OK-DMz"/>
                         <outlet property="viewContainer" destination="4Q8-f1-bmd" id="YbC-Ns-9OP"/>
                     </connections>
                 </viewController>
@@ -125,7 +157,8 @@
     </scenes>
     <resources>
         <image name="Menu" width="24" height="17"/>
-        <image name="gradient" width="1920" height="1080"/>
+        <image name="asel_logo" width="300" height="247"/>
+        <image name="etkinlikbanner" width="1437" height="633"/>
         <image name="header" width="630" height="355"/>
     </resources>
 </document>

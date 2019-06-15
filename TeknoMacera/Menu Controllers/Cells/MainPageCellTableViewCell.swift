@@ -15,6 +15,8 @@ class MainPageCellTableViewCell: UITableViewCell {
     @IBOutlet weak var backgroundImageview: UIView!
     @IBOutlet weak var imageCategory: UIImageView!
     @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var labelDesc: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,6 +24,9 @@ class MainPageCellTableViewCell: UITableViewCell {
         self.selectionStyle = SelectionStyle.none
     }
     override func layoutSubviews() {
+        self.contentView.layer.cornerRadius = 7.0
+        self.contentView.layer.masksToBounds = true
+        
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--İzle Ve Öğren-->
+        <scene sceneID="Zqs-Cn-yPI">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PzG-NK-GE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="YoutubeLessonVC" title="İzle Ve Öğren" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1oA-Wa-ahC" customClass="YoutubeLEssonViewController" customModule="TeknoMacera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sFN-n9-h7C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r1i-qi-WE7">
+                                <rect key="frame" x="20.5" y="85" width="373" height="777"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="3RT-jL-aTx">
+                                <rect key="frame" x="197" y="463.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="3Ps-Ts-R8v"/>
+                                    <constraint firstAttribute="width" constant="20" id="JDa-X2-aZz"/>
+                                </constraints>
+                                <color key="color" red="0.26067504740000003" green="0.27596400119999998" blue="0.68373542750000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qP7-vp-6Si">
+                                <rect key="frame" x="20.5" y="35" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="4EK-zg-lbf"/>
+                                    <constraint firstAttribute="height" constant="50" id="SqC-WO-TqH"/>
+                                </constraints>
+                                <state key="normal" title="Kapat">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnDissmissPressed:" destination="1oA-Wa-ahC" eventType="touchUpInside" id="uty-Yp-Cc5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.38726892610000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3RT-jL-aTx" firstAttribute="centerY" secondItem="r1i-qi-WE7" secondAttribute="centerY" id="1dn-EL-8j3"/>
+                            <constraint firstItem="9uE-lN-bQy" firstAttribute="bottom" secondItem="r1i-qi-WE7" secondAttribute="bottom" id="ASX-h3-9os"/>
+                            <constraint firstItem="r1i-qi-WE7" firstAttribute="width" secondItem="sFN-n9-h7C" secondAttribute="width" multiplier="0.9" id="HaD-Yg-kjG"/>
+                            <constraint firstItem="qP7-vp-6Si" firstAttribute="top" secondItem="sFN-n9-h7C" secondAttribute="top" constant="35" id="Kbc-cY-zZW"/>
+                            <constraint firstItem="3RT-jL-aTx" firstAttribute="centerX" secondItem="r1i-qi-WE7" secondAttribute="centerX" id="QUI-OL-mXx"/>
+                            <constraint firstItem="r1i-qi-WE7" firstAttribute="centerX" secondItem="9uE-lN-bQy" secondAttribute="centerX" id="WZN-UG-B2u"/>
+                            <constraint firstItem="qP7-vp-6Si" firstAttribute="leading" secondItem="r1i-qi-WE7" secondAttribute="leading" id="ayV-je-YRQ"/>
+                            <constraint firstItem="r1i-qi-WE7" firstAttribute="top" secondItem="qP7-vp-6Si" secondAttribute="bottom" id="o8P-LM-zXC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9uE-lN-bQy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="İzle Öğren" id="pZP-Un-to7">
+                        <barButtonItem key="backBarButtonItem" title="Geri" id="zDj-d8-xuA"/>
+                    </navigationItem>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="indicator" destination="3RT-jL-aTx" id="Q0s-Oy-C62"/>
+                        <outlet property="viewContainer" destination="r1i-qi-WE7" id="bjc-Fm-61F"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2959" y="155"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FWs-du-7to">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bEu-N8-Q87" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8UA-wx-Ett">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1oA-Wa-ahC" kind="relationship" relationship="rootViewController" id="QWw-83-7pl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0Z-uc-0ij" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2088" y="155"/>
+        </scene>
+    </scenes>
+</document>

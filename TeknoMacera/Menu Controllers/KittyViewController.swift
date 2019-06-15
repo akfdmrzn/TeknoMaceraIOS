@@ -87,6 +87,9 @@ class KittyViewController: UIViewController, SideMenuItemContent, Storyboardable
         }
         
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         self.indicator.stopAnimating()
         self.lottieView.isHidden = true;        self.webView!.evaluateJavaScript("document.getElementsByClassName('mkdf-mobile-header')[0].style.display='none';", completionHandler: nil)

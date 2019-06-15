@@ -7,55 +7,68 @@ import Lottie
 /**
  KittyViewController is a controller relevant one of the side menu items. To indicate this it adopts `SideMenuItemContent` protocol.
  */
-class PlayGameVC: UIViewController, SideMenuItemContent, Storyboardable,WKNavigationDelegate,WKUIDelegate {
+class PlayGameVC: UIViewController, SideMenuItemContent, Storyboardable{
     
     @IBOutlet weak var btnHamburger: UIButton!
     @IBOutlet weak var viewContainer: UIView!
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var collectionViewGames: UICollectionView!
     @IBOutlet weak var lottieView: AnimationView!
-    var webView : WKWebView?
+    
+    var gameList : [GameModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = false
         self.indicator.isHidden = true
-        self.webView = WKWebView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
-        self.viewContainer.addSubview(self.webView!)
-        self.webView!.navigationDelegate = self;
-        self.webView!.uiDelegate = self;
-        let url = URL(string: "https://www.teknomacera.com/oyun-oyna/")
-        if Reachability.isConnectedToNetwork(){
-            webView!.load(URLRequest(url: url!));
-            webView!.evaluateJavaScript("document.getElementsByClassName('mkdf-mobile-header')[0].style.display='none';", completionHandler: nil)
-            self.webView?.backgroundColor = UIColor.init(red: 37.0/255.0, green: 38.0/255.0, blue: 146.0/255.0, alpha: 1.0)
-            self.webView!.isHidden = true
-            self.view.bringSubviewToFront(self.btnHamburger)
-            self.indicator.startAnimating()
-            self.setNeedsStatusBarAppearanceUpdate()
-        }else{
-            let alert = UIAlertController(title: "Uyarı", message: "Lütfen İnternet Bağlantınızı Kontrol Edin.", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "Tamam", style: UIAlertAction.Style.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-            
-        }
         
-        /// Some time later
-        let starAnimation = Animation.named("robot")
-        lottieView.animation = starAnimation
-        self.lottieView.play { (finished) in
-            /// Animation finished
-        }
+        UIViewController.attemptRotationToDeviceOrientation()
         
+        self.collectionViewGames.delegate = self
+        self.collectionViewGames.dataSource = self
+        self.collectionViewGames.register(GamesCollectionViewCell.nib, forCellWithReuseIdentifier: GamesCollectionViewCell.identifier)
+        self.gameList.append(GameModel.init(t: "Asel'le Kodlama", i: UIImage.init(named: "kodgame")!, gameLink: "https://teknomacera.com/aselle-kodlama/aselle-kodlama/maze/index.html"))
+        self.gameList.append(GameModel.init(t: "Uzay Macerası", i: UIImage.init(named: "2game")!, gameLink: "https://teknomacera.com/uzay-macerasi/"))
+        self.gameList.append(GameModel.init(t: "Tekno Bilgi", i: UIImage.init(named: "3game")!, gameLink: "https://teknomacera.com/aselsan-tekno-bilgi/index.html"))
+        self.gameList.append(GameModel.init(t: "Asel'le Hafıza Oyunu", i: UIImage.init(named: "4game")!, gameLink: "https://teknomacera.com/aselsan-hafiza/index.html"))
+        self.collectionViewGames.reloadData()
+        let value = UIInterfaceOrientation.landscapeRight.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
     }
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        self.indicator.stopAnimating()
-        self.lottieView.isHidden = true;  self.webView!.evaluateJavaScript("document.getElementsByClassName('mkdf-mobile-header')[0].style.display='none';", completionHandler: nil)
-        self.webView!.isHidden = false
+    override var shouldAutorotate: Bool {
+        return true
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+        let value = UIInterfaceOrientation.portrait.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
+    }
     // Show side menu on menu button click
     @IBAction func openMenu(_ sender: UIButton) {
         showSideMenu()
     }
+}
+extension PlayGameVC : UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
+{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.gameList.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionViewGames.dequeueReusableCell(withReuseIdentifier:GamesCollectionViewCell.identifier, for: indexPath as IndexPath) as? GamesCollectionViewCell
+        cell?.setInfo(model: self.gameList[indexPath.row])
+        return cell!
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "YoutubeVC", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "YoutubeViewController") as! YoutubeViewController
+        nextViewController.url = self.gameList[indexPath.row].gameLink
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize.init(width: 150.0, height: 210.0)
+    }
+    
 }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,6 +41,18 @@
 		4FDA8606228CD2A500B246AD /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA8605228CD2A500B246AD /* MainPageVC.swift */; };
 		69D6FC98BD6FC2E25BA1524D /* Pods_TeknoMaceraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4595673B446991C35F694A58 /* Pods_TeknoMaceraUITests.framework */; };
 		A63C8024357705E86135C8DA /* Pods_TeknoMaceraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1F783C7961A477B9BA4975 /* Pods_TeknoMaceraTests.framework */; };
+		BF05031522B390FF00E3FF7E /* kesfetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05031322B390FF00E3FF7E /* kesfetCollectionViewCell.swift */; };
+		BF05031622B390FF00E3FF7E /* kesfetCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF05031422B390FF00E3FF7E /* kesfetCollectionViewCell.xib */; };
+		BF05031922B3C7FD00E3FF7E /* EtkinlikTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05031722B3C7FD00E3FF7E /* EtkinlikTableViewCell.swift */; };
+		BF05031A22B3C7FD00E3FF7E /* EtkinlikTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF05031822B3C7FD00E3FF7E /* EtkinlikTableViewCell.xib */; };
+		BF05031D22B3DEF700E3FF7E /* GamesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05031B22B3DEF700E3FF7E /* GamesCollectionViewCell.swift */; };
+		BF05031E22B3DEF700E3FF7E /* GamesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF05031C22B3DEF700E3FF7E /* GamesCollectionViewCell.xib */; };
+		BF05032022B3EA9D00E3FF7E /* YoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05031F22B3EA9D00E3FF7E /* YoutubeViewController.swift */; };
+		BF05032322B4F32A00E3FF7E /* WatchLearnCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05032122B4F32A00E3FF7E /* WatchLearnCollectionViewCell.swift */; };
+		BF05032422B4F32A00E3FF7E /* WatchLearnCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF05032222B4F32A00E3FF7E /* WatchLearnCollectionViewCell.xib */; };
+		BF05032622B5005500E3FF7E /* YoutubeLEssonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05032522B5005500E3FF7E /* YoutubeLEssonViewController.swift */; };
+		BF69499D22B50968001CD63C /* YoutubeLessonVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF69499C22B50968001CD63C /* YoutubeLessonVC.storyboard */; };
+		BF69499F22B51531001CD63C /* YoutubeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF69499E22B51531001CD63C /* YoutubeVC.storyboard */; };
 		F8A097882AF66873693B075F /* Pods_TeknoMacera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5D65C6EC0B1471C17BC390 /* Pods_TeknoMacera.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +119,18 @@
 		4FDA8602228CCE6A00B246AD /* MainPageCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageCellTableViewCell.xib; sourceTree = "<group>"; };
 		4FDA8605228CD2A500B246AD /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
 		5B0725809A0D76921076CE23 /* Pods-TeknoMacera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeknoMacera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeknoMacera/Pods-TeknoMacera.debug.xcconfig"; sourceTree = "<group>"; };
+		BF05031322B390FF00E3FF7E /* kesfetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kesfetCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF05031422B390FF00E3FF7E /* kesfetCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = kesfetCollectionViewCell.xib; sourceTree = "<group>"; };
+		BF05031722B3C7FD00E3FF7E /* EtkinlikTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtkinlikTableViewCell.swift; sourceTree = "<group>"; };
+		BF05031822B3C7FD00E3FF7E /* EtkinlikTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EtkinlikTableViewCell.xib; sourceTree = "<group>"; };
+		BF05031B22B3DEF700E3FF7E /* GamesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF05031C22B3DEF700E3FF7E /* GamesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesCollectionViewCell.xib; sourceTree = "<group>"; };
+		BF05031F22B3EA9D00E3FF7E /* YoutubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeViewController.swift; sourceTree = "<group>"; };
+		BF05032122B4F32A00E3FF7E /* WatchLearnCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchLearnCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF05032222B4F32A00E3FF7E /* WatchLearnCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WatchLearnCollectionViewCell.xib; sourceTree = "<group>"; };
+		BF05032522B5005500E3FF7E /* YoutubeLEssonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeLEssonViewController.swift; sourceTree = "<group>"; };
+		BF69499C22B50968001CD63C /* YoutubeLessonVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YoutubeLessonVC.storyboard; sourceTree = "<group>"; };
+		BF69499E22B51531001CD63C /* YoutubeVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YoutubeVC.storyboard; sourceTree = "<group>"; };
 		F1D43A486EF4A9D02999AB84 /* Pods-TeknoMaceraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeknoMaceraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeknoMaceraTests/Pods-TeknoMaceraTests.release.xcconfig"; sourceTree = "<group>"; };
 		FE1F783C7961A477B9BA4975 /* Pods_TeknoMaceraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeknoMaceraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -226,6 +250,10 @@
 				4FDA85DF228B494600B246AD /* AskAselsanVC.swift */,
 				4FDA85FF228CCC2800B246AD /* MainPageVC.storyboard */,
 				4FDA8605228CD2A500B246AD /* MainPageVC.swift */,
+				BF69499C22B50968001CD63C /* YoutubeLessonVC.storyboard */,
+				BF05032522B5005500E3FF7E /* YoutubeLEssonViewController.swift */,
+				BF69499E22B51531001CD63C /* YoutubeVC.storyboard */,
+				BF05031F22B3EA9D00E3FF7E /* YoutubeViewController.swift */,
 			);
 			path = "Menu Controllers";
 			sourceTree = "<group>";
@@ -236,6 +264,14 @@
 				4FDA85D5228B493B00B246AD /* SampleTableCell.swift */,
 				4FDA8601228CCE6A00B246AD /* MainPageCellTableViewCell.swift */,
 				4FDA8602228CCE6A00B246AD /* MainPageCellTableViewCell.xib */,
+				BF05031322B390FF00E3FF7E /* kesfetCollectionViewCell.swift */,
+				BF05031422B390FF00E3FF7E /* kesfetCollectionViewCell.xib */,
+				BF05031722B3C7FD00E3FF7E /* EtkinlikTableViewCell.swift */,
+				BF05031822B3C7FD00E3FF7E /* EtkinlikTableViewCell.xib */,
+				BF05031B22B3DEF700E3FF7E /* GamesCollectionViewCell.swift */,
+				BF05031C22B3DEF700E3FF7E /* GamesCollectionViewCell.xib */,
+				BF05032122B4F32A00E3FF7E /* WatchLearnCollectionViewCell.swift */,
+				BF05032222B4F32A00E3FF7E /* WatchLearnCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -388,11 +424,17 @@
 				4FDA85FA228CB4A800B246AD /* robot.json in Resources */,
 				4FDA85A1228B485900B246AD /* Assets.xcassets in Resources */,
 				4FDA85E7228B494600B246AD /* EtkinlikVC.storyboard in Resources */,
+				BF05031A22B3C7FD00E3FF7E /* EtkinlikTableViewCell.xib in Resources */,
 				4FDA85E8228B494600B246AD /* WatchLearnVC.storyboard in Resources */,
 				4FDA85E6228B494600B246AD /* PlayGameVC.storyboard in Resources */,
 				4FDA85E5228B494600B246AD /* RegisterVC.storyboard in Resources */,
+				BF05032422B4F32A00E3FF7E /* WatchLearnCollectionViewCell.xib in Resources */,
 				4FDA8604228CCE6A00B246AD /* MainPageCellTableViewCell.xib in Resources */,
+				BF05031622B390FF00E3FF7E /* kesfetCollectionViewCell.xib in Resources */,
+				BF69499D22B50968001CD63C /* YoutubeLessonVC.storyboard in Resources */,
 				4FDA859F228B485700B246AD /* Main.storyboard in Resources */,
+				BF69499F22B51531001CD63C /* YoutubeVC.storyboard in Resources */,
+				BF05031E22B3DEF700E3FF7E /* GamesCollectionViewCell.xib in Resources */,
 				4FDA85F8228B495200B246AD /* SampleMenuViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,24 +528,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TeknoMacera/Pods-TeknoMacera-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CircleMenu/CircleMenu.framework",
-				"${BUILT_PRODUCTS_DIR}/InteractiveSideMenu/InteractiveSideMenu.framework",
-				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-TeknoMacera/Pods-TeknoMacera-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircleMenu.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InteractiveSideMenu.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-TeknoMacera/Pods-TeknoMacera-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeknoMacera/Pods-TeknoMacera-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeknoMacera/Pods-TeknoMacera-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -515,13 +548,19 @@
 			files = (
 				4FDA85FC228CC9D400B246AD /* Reachability.swift in Sources */,
 				4FDA859C228B485700B246AD /* ViewController.swift in Sources */,
+				BF05032022B3EA9D00E3FF7E /* YoutubeViewController.swift in Sources */,
 				4FDA85D4228B493500B246AD /* Storyboardable.swift in Sources */,
 				4FDA85D6228B493B00B246AD /* SampleTableCell.swift in Sources */,
 				4FDA85EF228B494600B246AD /* EtkinlikVC.swift in Sources */,
 				4FDA85F0228B494600B246AD /* KesfetVC.swift in Sources */,
+				BF05031D22B3DEF700E3FF7E /* GamesCollectionViewCell.swift in Sources */,
 				4FDA8606228CD2A500B246AD /* MainPageVC.swift in Sources */,
 				4FDA85E9228B494600B246AD /* KittyViewController.swift in Sources */,
+				BF05031922B3C7FD00E3FF7E /* EtkinlikTableViewCell.swift in Sources */,
+				BF05032322B4F32A00E3FF7E /* WatchLearnCollectionViewCell.swift in Sources */,
+				BF05031522B390FF00E3FF7E /* kesfetCollectionViewCell.swift in Sources */,
 				4FDA85F1228B494600B246AD /* WatchLearnVC.swift in Sources */,
+				BF05032622B5005500E3FF7E /* YoutubeLEssonViewController.swift in Sources */,
 				4FDA85F6228B495200B246AD /* SampleMenuViewController.swift in Sources */,
 				4FDA85ED228B494600B246AD /* AskAselsanVC.swift in Sources */,
 				4FDA85F7228B495200B246AD /* HostViewController.swift in Sources */,
@@ -705,7 +744,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 65TH5D9393;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TeknoMacera/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -725,7 +764,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 65TH5D9393;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TeknoMacera/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (

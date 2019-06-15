@@ -18,25 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundOrange" translatesAutoresizingMaskIntoConstraints="NO" id="bsV-A5-aY0">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asel_logo" translatesAutoresizingMaskIntoConstraints="NO" id="0yO-9g-bSv">
+                                <rect key="frame" x="189.66666666666666" y="691" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="8Ec-1n-nWi"/>
+                                    <constraint firstAttribute="height" constant="35" id="xHJ-m7-Wyp"/>
+                                </constraints>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bUP-Sf-5Km">
-                                <rect key="frame" x="0.0" y="164" width="414" height="477"/>
+                                <rect key="frame" x="20" y="164" width="374" height="522"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headertekno" translatesAutoresizingMaskIntoConstraints="NO" id="29C-VB-qR1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerMain" translatesAutoresizingMaskIntoConstraints="NO" id="29C-VB-qR1">
                                 <rect key="frame" x="0.0" y="64" width="414" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="yvD-DQ-iYM"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jvx-uA-toM">
-                                <rect key="frame" x="0.0" y="64" width="60" height="60"/>
-                                <color key="backgroundColor" red="0.1450980392" green="0.14901960780000001" blue="0.57254901960000004" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="7Id-2W-kzB"/>
-                                    <constraint firstAttribute="height" constant="60" id="gp1-nn-dG0"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zll-xy-Wyk">
                                 <rect key="frame" x="10" y="74" width="44" height="44"/>
                                 <constraints>
@@ -48,30 +50,24 @@
                                     <action selector="openMenu:" destination="Jb8-l0-45F" eventType="touchUpInside" id="BSE-aq-kgE"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zv4-Fx-wkc">
-                                <rect key="frame" x="0.0" y="636" width="414" height="100"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="aWe-HC-S5C"/>
-                                </constraints>
-                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.1450980392" green="0.14901960780000001" blue="0.57254901960000004" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="xZa-6X-cTc" firstAttribute="trailing" secondItem="zv4-Fx-wkc" secondAttribute="trailing" id="3U4-GE-jTC"/>
+                            <constraint firstItem="xZa-6X-cTc" firstAttribute="bottom" secondItem="0yO-9g-bSv" secondAttribute="bottom" constant="10" id="2Fc-5T-XcZ"/>
                             <constraint firstItem="Zll-xy-Wyk" firstAttribute="leading" secondItem="xZa-6X-cTc" secondAttribute="leading" constant="10" id="8yH-4U-HYo"/>
-                            <constraint firstItem="jvx-uA-toM" firstAttribute="leading" secondItem="IwO-73-HeR" secondAttribute="leading" id="9z6-fy-Akc"/>
-                            <constraint firstItem="jvx-uA-toM" firstAttribute="top" secondItem="29C-VB-qR1" secondAttribute="top" id="DvU-BP-zmT"/>
-                            <constraint firstItem="xZa-6X-cTc" firstAttribute="bottom" secondItem="zv4-Fx-wkc" secondAttribute="bottom" id="FLr-Hi-sdg"/>
-                            <constraint firstItem="xZa-6X-cTc" firstAttribute="bottom" secondItem="bUP-Sf-5Km" secondAttribute="bottom" constant="95" id="Hma-uN-vQh"/>
+                            <constraint firstItem="xZa-6X-cTc" firstAttribute="bottom" secondItem="bUP-Sf-5Km" secondAttribute="bottom" constant="50" id="Hma-uN-vQh"/>
+                            <constraint firstItem="0yO-9g-bSv" firstAttribute="centerX" secondItem="xZa-6X-cTc" secondAttribute="centerX" id="MRE-fe-9gk"/>
                             <constraint firstItem="bUP-Sf-5Km" firstAttribute="top" secondItem="29C-VB-qR1" secondAttribute="bottom" id="NTS-R0-5uy"/>
-                            <constraint firstItem="zv4-Fx-wkc" firstAttribute="leading" secondItem="xZa-6X-cTc" secondAttribute="leading" id="PIH-w2-DGX"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="bsV-A5-aY0" secondAttribute="bottom" id="PbA-Co-vlv"/>
                             <constraint firstItem="Zll-xy-Wyk" firstAttribute="top" secondItem="xZa-6X-cTc" secondAttribute="top" constant="10" id="YPX-oG-XEj"/>
+                            <constraint firstItem="bsV-A5-aY0" firstAttribute="top" secondItem="IwO-73-HeR" secondAttribute="topMargin" id="Zww-R8-W08"/>
                             <constraint firstItem="29C-VB-qR1" firstAttribute="leading" secondItem="IwO-73-HeR" secondAttribute="leading" id="aft-3d-hhu"/>
                             <constraint firstItem="29C-VB-qR1" firstAttribute="top" secondItem="xZa-6X-cTc" secondAttribute="top" id="edT-BW-m3O"/>
-                            <constraint firstItem="xZa-6X-cTc" firstAttribute="trailing" secondItem="bUP-Sf-5Km" secondAttribute="trailing" id="ph3-Rc-DBM"/>
+                            <constraint firstItem="bsV-A5-aY0" firstAttribute="leading" secondItem="xZa-6X-cTc" secondAttribute="leading" id="fnn-SK-fin"/>
+                            <constraint firstItem="xZa-6X-cTc" firstAttribute="trailing" secondItem="bUP-Sf-5Km" secondAttribute="trailing" constant="20" id="ph3-Rc-DBM"/>
                             <constraint firstItem="xZa-6X-cTc" firstAttribute="trailing" secondItem="29C-VB-qR1" secondAttribute="trailing" id="rBh-vW-tt8"/>
-                            <constraint firstItem="bUP-Sf-5Km" firstAttribute="leading" secondItem="xZa-6X-cTc" secondAttribute="leading" id="vXC-Ho-Ye0"/>
+                            <constraint firstItem="bUP-Sf-5Km" firstAttribute="leading" secondItem="xZa-6X-cTc" secondAttribute="leading" constant="20" id="vXC-Ho-Ye0"/>
+                            <constraint firstItem="xZa-6X-cTc" firstAttribute="trailing" secondItem="bsV-A5-aY0" secondAttribute="trailing" id="z2T-Yh-ISx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xZa-6X-cTc"/>
                     </view>
@@ -79,7 +75,6 @@
                     <connections>
                         <outlet property="btnHamburger" destination="Zll-xy-Wyk" id="a7t-Ya-LjP"/>
                         <outlet property="tableView" destination="bUP-Sf-5Km" id="12V-Ol-l67"/>
-                        <outlet property="viewBottom" destination="zv4-Fx-wkc" id="F2V-VJ-ElQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSa-Hy-1pP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -107,6 +102,8 @@
     </scenes>
     <resources>
         <image name="Menu" width="24" height="17"/>
-        <image name="headertekno" width="2874" height="666"/>
+        <image name="asel_logo" width="300" height="247"/>
+        <image name="backgroundOrange" width="512" height="293.5"/>
+        <image name="bannerMain" width="512" height="168"/>
     </resources>
 </document>

@@ -48,18 +48,19 @@ class SampleMenuViewController: MenuViewController, Storyboardable {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
-        avatarImageViewCenterXConstraint.constant = -(menuContainerViewController?.transitionOptions.visibleContentWidth ?? 0.0)/2
+//        avatarImageViewCenterXConstraint.constant = -(menuContainerViewController?.transitionOptions.visibleContentWidth ?? 0.0)/2
 
         if gradientLayer.superlayer != nil {
             gradientLayer.removeFromSuperlayer()
         }
-        let topColor = UIColor(red: 16.0/255.0, green: 12.0/255.0, blue: 54.0/255.0, alpha: 1.0)
-        let bottomColor = UIColor(red: 57.0/255.0, green: 33.0/255.0, blue: 61.0/255.0, alpha: 1.0)
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
-        gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
-        gradientLayer.frame = view.bounds
-        view.layer.insertSublayer(gradientLayer, at: 0)
+//        let topColor = UIColor(red: 16.0/255.0, green: 12.0/255.0, blue: 54.0/255.0, alpha: 1.0)
+//        let bottomColor = UIColor(red: 57.0/255.0, green: 33.0/255.0, blue: 61.0/255.0, alpha: 1.0)
+//        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
+//        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
+//        gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
+//        gradientLayer.frame = view.bounds
+//        view.layer.insertSublayer(gradientLayer, at: 0)
+        let imageView = #imageLiteral(resourceName: "backgroundOrange")
     }
 
     deinit{

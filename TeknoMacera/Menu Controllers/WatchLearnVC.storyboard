@@ -24,6 +24,89 @@
                                     <constraint firstAttribute="height" id="itg-fJ-0M5"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EK9-ho-6lv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerwatchle" translatesAutoresizingMaskIntoConstraints="NO" id="6F9-Kh-15l">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="axy-nN-VgM"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eN-0Y-nbf">
+                                        <rect key="frame" x="0.0" y="200" width="375" height="403"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merak Eden Çocukların Kanalı" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNQ-sY-DcS">
+                                                <rect key="frame" x="10" y="10" width="355" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <color key="textColor" red="0.1165190504" green="0.36363898610000001" blue="0.71292098449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnB-hd-6cM">
+                                                <rect key="frame" x="10" y="34.5" width="355" height="84"/>
+                                                <string key="text">İZLE VE ÖĞREN sayfasında, ASEL’in YouTube Kanalı’ndaki animasyon eğitim videolarını
+izleyebilirsin. EDA ve METE’nin konuk olduğu videolarda, teknolojiden bilime, uzaydan robotlara,
+en çok merak ettiklerinizi ASEL sizler için anlatıyor!</string>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                <color key="textColor" red="0.1165190504" green="0.36363898610000001" blue="0.71292098449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vt3-li-34A">
+                                                <rect key="frame" x="30" y="128.5" width="315" height="234.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1pp-MY-car">
+                                                    <size key="itemSize" width="50" height="50"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tP8-IP-UQ8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </view>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asel_logo" translatesAutoresizingMaskIntoConstraints="NO" id="r0d-86-BZH">
+                                                <rect key="frame" x="175" y="368" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="MdH-gT-ALd"/>
+                                                    <constraint firstAttribute="height" constant="25" id="j52-ft-nOZ"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="gnB-hd-6cM" secondAttribute="trailing" constant="10" id="6hR-4h-m0z"/>
+                                            <constraint firstAttribute="trailing" secondItem="vt3-li-34A" secondAttribute="trailing" constant="30" id="7Hf-ON-kuS"/>
+                                            <constraint firstAttribute="trailing" secondItem="PNQ-sY-DcS" secondAttribute="trailing" constant="10" id="FZC-hT-nLl"/>
+                                            <constraint firstItem="PNQ-sY-DcS" firstAttribute="leading" secondItem="6eN-0Y-nbf" secondAttribute="leading" constant="10" id="G45-Jy-Y3i"/>
+                                            <constraint firstItem="PNQ-sY-DcS" firstAttribute="top" secondItem="6eN-0Y-nbf" secondAttribute="top" constant="10" id="KYJ-re-AKb"/>
+                                            <constraint firstItem="gnB-hd-6cM" firstAttribute="top" secondItem="PNQ-sY-DcS" secondAttribute="bottom" constant="5" id="V2c-ra-1hE"/>
+                                            <constraint firstItem="gnB-hd-6cM" firstAttribute="leading" secondItem="6eN-0Y-nbf" secondAttribute="leading" constant="10" id="XwD-NX-h3u"/>
+                                            <constraint firstItem="vt3-li-34A" firstAttribute="top" secondItem="gnB-hd-6cM" secondAttribute="bottom" constant="10" id="hgW-Ee-RRf"/>
+                                            <constraint firstItem="r0d-86-BZH" firstAttribute="top" secondItem="vt3-li-34A" secondAttribute="bottom" constant="5" id="nAV-CT-zar"/>
+                                            <constraint firstAttribute="bottom" secondItem="vt3-li-34A" secondAttribute="bottom" constant="40" id="qSM-mV-5Er"/>
+                                            <constraint firstItem="r0d-86-BZH" firstAttribute="centerX" secondItem="6eN-0Y-nbf" secondAttribute="centerX" id="qTD-Nm-TKY"/>
+                                            <constraint firstItem="vt3-li-34A" firstAttribute="leading" secondItem="6eN-0Y-nbf" secondAttribute="leading" constant="30" id="rKU-H4-ETj"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1450980392" green="0.14901960780000001" blue="0.57254901960000004" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="6eN-0Y-nbf" secondAttribute="bottom" id="54u-6k-SaE"/>
+                                    <constraint firstAttribute="trailing" secondItem="6eN-0Y-nbf" secondAttribute="trailing" id="7gB-3M-8H4"/>
+                                    <constraint firstItem="6F9-Kh-15l" firstAttribute="leading" secondItem="EK9-ho-6lv" secondAttribute="leading" id="7oi-yL-OLj"/>
+                                    <constraint firstItem="6eN-0Y-nbf" firstAttribute="top" secondItem="6F9-Kh-15l" secondAttribute="bottom" id="EJI-jR-O66"/>
+                                    <constraint firstItem="6F9-Kh-15l" firstAttribute="top" secondItem="EK9-ho-6lv" secondAttribute="top" id="JvO-33-Tap"/>
+                                    <constraint firstItem="6eN-0Y-nbf" firstAttribute="leading" secondItem="EK9-ho-6lv" secondAttribute="leading" id="Wme-E2-K6r"/>
+                                    <constraint firstAttribute="trailing" secondItem="6F9-Kh-15l" secondAttribute="trailing" id="gmZ-wC-bK1"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWn-L5-xZc">
                                 <rect key="frame" x="6" y="0.0" width="44" height="44"/>
                                 <constraints>
@@ -35,21 +118,6 @@
                                     <action selector="openMenu:" destination="kEc-cz-4TN" eventType="touchUpInside" id="flA-gJ-vvg"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EK9-ho-6lv">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="6F9-Kh-15l">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.1450980392" green="0.14901960780000001" blue="0.57254901960000004" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="6F9-Kh-15l" firstAttribute="leading" secondItem="EK9-ho-6lv" secondAttribute="leading" id="7oi-yL-OLj"/>
-                                    <constraint firstItem="6F9-Kh-15l" firstAttribute="top" secondItem="EK9-ho-6lv" secondAttribute="top" id="JvO-33-Tap"/>
-                                    <constraint firstAttribute="trailing" secondItem="6F9-Kh-15l" secondAttribute="trailing" id="gmZ-wC-bK1"/>
-                                    <constraint firstAttribute="bottom" secondItem="6F9-Kh-15l" secondAttribute="bottom" id="oB6-Qv-jxT"/>
-                                </constraints>
-                            </view>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="APZ-Qc-F40">
                                 <rect key="frame" x="177.5" y="291.5" width="20" height="20"/>
                                 <constraints>
@@ -97,6 +165,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="btnHamburger" destination="OWn-L5-xZc" id="8Wu-nG-OJi"/>
+                        <outlet property="collectionView" destination="vt3-li-34A" id="Boz-4Z-8hd"/>
                         <outlet property="indicator" destination="APZ-Qc-F40" id="GIe-Zi-4gf"/>
                         <outlet property="lottieView" destination="oLc-RB-vmV" id="uxO-pW-Usn"/>
                         <outlet property="viewContainer" destination="EK9-ho-6lv" id="Wdn-hz-Z6f"/>
@@ -127,7 +196,8 @@
     </scenes>
     <resources>
         <image name="Menu" width="24" height="17"/>
-        <image name="gradient" width="1920" height="1080"/>
+        <image name="asel_logo" width="300" height="247"/>
+        <image name="bannerwatchle" width="1440" height="652"/>
         <image name="header" width="630" height="355"/>
     </resources>
 </document>

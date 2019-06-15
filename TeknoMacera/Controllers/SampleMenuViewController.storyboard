@@ -21,26 +21,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Da9-Jd-YEy" userLabel="Avatar Container">
-                                <rect key="frame" x="0.0" y="20" width="375" height="200"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asel_logo" translatesAutoresizingMaskIntoConstraints="NO" id="8Ml-Wj-FH6">
-                                        <rect key="frame" x="37.5" y="50" width="300" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="wdd-6p-4JC"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundOrange" translatesAutoresizingMaskIntoConstraints="NO" id="J3s-8G-Jev">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asel_logo" translatesAutoresizingMaskIntoConstraints="NO" id="4XX-gY-xsi">
+                                <rect key="frame" x="170" y="25" width="35" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="3kz-6q-Scf"/>
-                                    <constraint firstItem="8Ml-Wj-FH6" firstAttribute="centerX" secondItem="Da9-Jd-YEy" secondAttribute="centerX" id="IV9-JM-QM8"/>
-                                    <constraint firstItem="8Ml-Wj-FH6" firstAttribute="width" secondItem="Da9-Jd-YEy" secondAttribute="width" multiplier="0.8" id="Nea-dy-uws"/>
-                                    <constraint firstItem="8Ml-Wj-FH6" firstAttribute="top" secondItem="Da9-Jd-YEy" secondAttribute="top" constant="50" id="k6B-Sx-Gcu"/>
+                                    <constraint firstAttribute="height" constant="35" id="bFA-RQ-SHg"/>
+                                    <constraint firstAttribute="width" constant="35" id="xPd-pG-KNo"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Da9-Jd-YEy" userLabel="Avatar Container">
+                                <rect key="frame" x="0.0" y="20" width="375" height="0.0"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="3kz-6q-Scf"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="100-0G-rtc">
-                                <rect key="frame" x="0.0" y="220" width="375" height="447"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SampleTableCell" id="hJG-Da-pJ8" customClass="SampleTableCell" customModule="TeknoMacera" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="50"/>
@@ -56,8 +57,8 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFf-3v-VwR">
-                                                    <rect key="frame" x="50" y="0.0" width="42" height="50"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="50" y="0.0" width="46" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -85,30 +86,45 @@
                                     <outlet property="delegate" destination="kda-Il-Pzk" id="et3-Lg-N5N"/>
                                 </connections>
                             </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orangeba" translatesAutoresizingMaskIntoConstraints="NO" id="HtZ-K9-D6o">
+                                <rect key="frame" x="10" y="487" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="8Cd-Dl-IRY"/>
+                                    <constraint firstAttribute="height" constant="180" id="jIr-91-mRi"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="100-0G-rtc" firstAttribute="top" secondItem="Da9-Jd-YEy" secondAttribute="bottom" id="HOD-lG-Wcd"/>
+                            <constraint firstAttribute="trailing" secondItem="J3s-8G-Jev" secondAttribute="trailing" id="BMo-jz-m3A"/>
+                            <constraint firstItem="HtZ-K9-D6o" firstAttribute="leading" secondItem="zbg-HC-cVd" secondAttribute="leading" constant="10" id="H4t-yk-2dd"/>
+                            <constraint firstItem="100-0G-rtc" firstAttribute="top" secondItem="Da9-Jd-YEy" secondAttribute="bottom" constant="50" id="HOD-lG-Wcd"/>
                             <constraint firstItem="Da9-Jd-YEy" firstAttribute="leading" secondItem="zbg-HC-cVd" secondAttribute="leading" id="KS6-bZ-nae"/>
                             <constraint firstItem="h2K-MZ-96M" firstAttribute="top" secondItem="100-0G-rtc" secondAttribute="bottom" id="OKe-AS-ukN"/>
                             <constraint firstAttribute="trailing" secondItem="Da9-Jd-YEy" secondAttribute="trailing" id="WR7-xe-1cv"/>
                             <constraint firstAttribute="trailing" secondItem="100-0G-rtc" secondAttribute="trailing" id="YGd-Xe-MZQ"/>
                             <constraint firstItem="100-0G-rtc" firstAttribute="leading" secondItem="zbg-HC-cVd" secondAttribute="leading" id="gUF-26-9hL"/>
+                            <constraint firstItem="J3s-8G-Jev" firstAttribute="top" secondItem="zbg-HC-cVd" secondAttribute="top" id="kSl-Ww-Dhw"/>
+                            <constraint firstItem="4XX-gY-xsi" firstAttribute="centerX" secondItem="zbg-HC-cVd" secondAttribute="centerX" id="mna-5B-nly"/>
                             <constraint firstItem="Da9-Jd-YEy" firstAttribute="top" secondItem="t0N-qX-OoG" secondAttribute="bottom" id="n5D-Nb-ymX"/>
+                            <constraint firstItem="h2K-MZ-96M" firstAttribute="top" secondItem="HtZ-K9-D6o" secondAttribute="bottom" id="nQf-07-GXY"/>
+                            <constraint firstItem="J3s-8G-Jev" firstAttribute="leading" secondItem="zbg-HC-cVd" secondAttribute="leading" id="vGW-Zr-QZr"/>
+                            <constraint firstItem="4XX-gY-xsi" firstAttribute="top" secondItem="Da9-Jd-YEy" secondAttribute="bottom" constant="5" id="wEq-oJ-5CE"/>
+                            <constraint firstAttribute="bottom" secondItem="J3s-8G-Jev" secondAttribute="bottom" id="yz9-Qa-fXK"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="avatarImageView" destination="8Ml-Wj-FH6" id="C2s-d6-R5e"/>
-                        <outlet property="avatarImageViewCenterXConstraint" destination="IV9-JM-QM8" id="zTh-bI-YG5"/>
                         <outlet property="tableView" destination="100-0G-rtc" id="yuT-09-rHo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DMK-1D-466" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1769" y="139"/>
+            <point key="canvasLocation" x="1768.8" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>
         <image name="asel_logo" width="300" height="247"/>
+        <image name="backgroundOrange" width="512" height="293.5"/>
+        <image name="orangeba" width="342.5" height="335"/>
     </resources>
 </document>
