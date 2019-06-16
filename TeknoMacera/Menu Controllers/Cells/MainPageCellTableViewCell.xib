@@ -28,12 +28,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İletişim" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeO-YK-dEt">
-                        <rect key="frame" x="105" y="86.5" width="250" height="16.5"/>
+                        <rect key="frame" x="105" y="42.5" width="250" height="16.5"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                         <color key="textColor" red="0.11651905037292312" green="0.3636389860762515" blue="0.71292098445595853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="console" translatesAutoresizingMaskIntoConstraints="NO" id="xfa-4P-j3S">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="console" translatesAutoresizingMaskIntoConstraints="NO" id="xfa-4P-j3S">
                         <rect key="frame" x="15" y="51" width="70" height="70"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="70" id="4b4-7k-oXy"/>
@@ -41,7 +41,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İletişim" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOb-FI-j4d">
-                        <rect key="frame" x="211.5" y="60" width="57" height="21.5"/>
+                        <rect key="frame" x="211.5" y="16" width="57" height="21.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <color key="textColor" red="0.84646211139896366" green="0.424276305479098" blue="0.22112132897941389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>

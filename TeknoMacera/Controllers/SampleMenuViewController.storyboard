@@ -87,7 +87,7 @@
                                 </connections>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orangeba" translatesAutoresizingMaskIntoConstraints="NO" id="HtZ-K9-D6o">
-                                <rect key="frame" x="10" y="487" width="180" height="180"/>
+                                <rect key="frame" x="0.0" y="487" width="180" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="8Cd-Dl-IRY"/>
                                     <constraint firstAttribute="height" constant="180" id="jIr-91-mRi"/>
@@ -97,7 +97,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="J3s-8G-Jev" secondAttribute="trailing" id="BMo-jz-m3A"/>
-                            <constraint firstItem="HtZ-K9-D6o" firstAttribute="leading" secondItem="zbg-HC-cVd" secondAttribute="leading" constant="10" id="H4t-yk-2dd"/>
+                            <constraint firstItem="HtZ-K9-D6o" firstAttribute="leading" secondItem="zbg-HC-cVd" secondAttribute="leading" id="H4t-yk-2dd"/>
                             <constraint firstItem="100-0G-rtc" firstAttribute="top" secondItem="Da9-Jd-YEy" secondAttribute="bottom" constant="50" id="HOD-lG-Wcd"/>
                             <constraint firstItem="Da9-Jd-YEy" firstAttribute="leading" secondItem="zbg-HC-cVd" secondAttribute="leading" id="KS6-bZ-nae"/>
                             <constraint firstItem="h2K-MZ-96M" firstAttribute="top" secondItem="100-0G-rtc" secondAttribute="bottom" id="OKe-AS-ukN"/>

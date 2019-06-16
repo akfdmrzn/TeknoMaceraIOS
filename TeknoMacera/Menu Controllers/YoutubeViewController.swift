@@ -22,7 +22,7 @@ class YoutubeViewController: UIViewController {
         UIDevice.current.setValue(value, forKey: "orientation")
     }
     override var shouldAutorotate: Bool {
-        return true
+        return false
     }
     override func viewWillDisappear(_ animated: Bool) {
         let value = UIInterfaceOrientation.portrait.rawValue

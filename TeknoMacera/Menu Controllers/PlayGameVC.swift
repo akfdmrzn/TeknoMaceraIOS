@@ -23,27 +23,40 @@ class PlayGameVC: UIViewController, SideMenuItemContent, Storyboardable{
         self.navigationController?.navigationBar.isHidden = false
         self.indicator.isHidden = true
         
-        UIViewController.attemptRotationToDeviceOrientation()
         
         self.collectionViewGames.delegate = self
         self.collectionViewGames.dataSource = self
         self.collectionViewGames.register(GamesCollectionViewCell.nib, forCellWithReuseIdentifier: GamesCollectionViewCell.identifier)
-        self.gameList.append(GameModel.init(t: "Asel'le Kodlama", i: UIImage.init(named: "kodgame")!, gameLink: "https://teknomacera.com/aselle-kodlama/aselle-kodlama/maze/index.html"))
-        self.gameList.append(GameModel.init(t: "Uzay Macerası", i: UIImage.init(named: "2game")!, gameLink: "https://teknomacera.com/uzay-macerasi/"))
-        self.gameList.append(GameModel.init(t: "Tekno Bilgi", i: UIImage.init(named: "3game")!, gameLink: "https://teknomacera.com/aselsan-tekno-bilgi/index.html"))
-        self.gameList.append(GameModel.init(t: "Asel'le Hafıza Oyunu", i: UIImage.init(named: "4game")!, gameLink: "https://teknomacera.com/aselsan-hafiza/index.html"))
+        self.gameList.append(GameModel.init(t: "Asel'le Kodlama", i: UIImage.init(named: "oyun1")!, gameLink: "https://teknomacera.com/aselle-kodlama/aselle-kodlama/maze/index.html"))
+        self.gameList.append(GameModel.init(t: "Uzay Macerası", i: UIImage.init(named: "oyun2")!, gameLink: "https://teknomacera.com/uzay-macerasi/"))
+        self.gameList.append(GameModel.init(t: "Tekno Bilgi", i: UIImage.init(named: "oyun3")!, gameLink: "https://teknomacera.com/aselsan-tekno-bilgi/index.html"))
+        self.gameList.append(GameModel.init(t: "Asel'le Hafıza Oyunu", i: UIImage.init(named: "oyun4")!, gameLink: "https://teknomacera.com/aselsan-hafiza/index.html"))
         self.collectionViewGames.reloadData()
         let value = UIInterfaceOrientation.landscapeRight.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
+        self.alert(message: "Lütfen Telefonunuzu Yatay Biçime Getiriniz")
     }
-    override var shouldAutorotate: Bool {
-        return true
+    func alert(message: String, title: String = "") {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "Tamam", style: .default, handler: nil)
+        alertController.addAction(OKAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    override var shouldAutorotate: Bool{
+        return false
+    }
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        return UIInterfaceOrientationMask.landscape
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+        let value = UIInterfaceOrientation.landscapeRight.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
-        let value = UIInterfaceOrientation.portrait.rawValue
-        UIDevice.current.setValue(value, forKey: "orientation")
+        
     }
     // Show side menu on menu button click
     @IBAction func openMenu(_ sender: UIButton) {

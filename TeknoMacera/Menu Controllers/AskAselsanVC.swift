@@ -23,19 +23,21 @@ class AskAselsanVC: UIViewController,SideMenuItemContent, Storyboardable,WKUIDel
     override func viewDidLoad() {
         super.viewDidLoad()
         self.txtFieldName.attributedPlaceholder = NSAttributedString(string:"Adınız Soyadınız", attributes: [NSAttributedString.Key.foregroundColor:UIColor.white])
-        self.txtFieldEposta.attributedPlaceholder = NSAttributedString(string:"EPosta Adresiniz", attributes: [NSAttributedString.Key.foregroundColor:UIColor.white])
+        self.txtFieldEposta.attributedPlaceholder = NSAttributedString(string:"E-Posta Adresiniz", attributes: [NSAttributedString.Key.foregroundColor:UIColor.white])
         self.txtFieldtKonu.attributedPlaceholder = NSAttributedString(string:"Konu", attributes: [NSAttributedString.Key.foregroundColor:UIColor.white])
         self.txtFieldSoru.attributedPlaceholder = NSAttributedString(string:"Asele Sor", attributes: [NSAttributedString.Key.foregroundColor:UIColor.white])
         
-        self.navigationController?.navigationBar.isHidden = false
         self.indicator.isHidden = true
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
     }
     func sendEmail() {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
-            mail.setToRecipients(["you@yoursite.com"])
+            mail.setToRecipients(["akifde1907@gmail.com"])
             mail.setMessageBody("Ad:\(self.txtFieldName.text)<br>Eposta:\(self.txtFieldEposta.text)<br>Konu:\(self.txtFieldtKonu.text)<br>Soru:\(self.txtFieldSoru.text)<br>", isHTML: true)
             
             present(mail, animated: true)
@@ -46,9 +48,6 @@ class AskAselsanVC: UIViewController,SideMenuItemContent, Storyboardable,WKUIDel
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true)
-    }
-    override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.navigationBar.isHidden = true
     }
     
     @IBAction func btnAskAsel(_ sender: Any) {

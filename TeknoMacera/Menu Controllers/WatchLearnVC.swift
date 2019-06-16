@@ -37,6 +37,9 @@ class WatchLearnVC: UIViewController, SideMenuItemContent, Storyboardable {
 
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
     }
@@ -67,7 +70,11 @@ extension WatchLearnVC : UICollectionViewDelegate,UICollectionViewDataSource,UIC
         
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize.init(width: self.view.frame.size.width * 0.4, height: 240.0)
+        return CGSize.init(width: self.view.frame.size.width * 0.35, height: 200.0)
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets.init(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+    }
+    
     
 }

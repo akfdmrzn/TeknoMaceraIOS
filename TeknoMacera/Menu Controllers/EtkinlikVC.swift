@@ -37,6 +37,9 @@ class EtkinlikVC: UIViewController, SideMenuItemContent, Storyboardable{
         self.etkinlikList.append(EtkinlikModel.init(t: "12 Mayıs Cepa AVM - Robot ve Teknoloji Atölyesi", d: "12 Mayıs saat 14.00 – 17.00 arasında Cepa AVM’de gerçekleşecek olan Robot ve Teknoloji Atölyesinde ASEL, Eda ve Mete tüm çocuk dostları ile buluşuyor. Tekno Macera etkinliklerine katıl, atölye çalışmaları ve sürpriz hediyeleri kaçırma!"))
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
     }
@@ -53,7 +56,7 @@ extension EtkinlikVC : UITableViewDelegate,UITableViewDataSource{
         return 1
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 180.0
+        return 200.0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier:EtkinlikTableViewCell.identifier, for: indexPath as IndexPath) as? EtkinlikTableViewCell{

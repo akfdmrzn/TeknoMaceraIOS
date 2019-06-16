@@ -20,7 +20,7 @@ class MainPageVC: UIViewController,SideMenuItemContent, Storyboardable {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
         self.titles = ["Oyun Oyna","İzle Öğren","Etkinlik","Asel'e Sor"]
-        self.imageCategories = [#imageLiteral(resourceName: "anasyfa1"),#imageLiteral(resourceName: "anasayfapencil"),#imageLiteral(resourceName: "anasayfanote"),#imageLiteral(resourceName: "anasayfafly")]
+        self.imageCategories = [#imageLiteral(resourceName: "anasyfa1"),UIImage.init(named: "satranc")!,UIImage.init(named: "note")!,UIImage.init(named: "fuze")!]
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(MainPageCellTableViewCell.nib, forCellReuseIdentifier: MainPageCellTableViewCell.identifier)
@@ -29,6 +29,7 @@ class MainPageVC: UIViewController,SideMenuItemContent, Storyboardable {
     @IBAction func openMenu(_ sender: UIButton) {
         showSideMenu()
     }
+   
 }
 extension MainPageVC : UITableViewDelegate,UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -70,26 +71,7 @@ extension MainPageVC : UITableViewDelegate,UITableViewDataSource{
         return UITableViewCell()
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 0 {
-            let storyBoard : UIStoryboard = UIStoryboard(name: "PlayGameVC", bundle:nil)
-            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "PlayGameVC") as! PlayGameVC
-            self.navigationController?.pushViewController(nextViewController, animated: true)
-        }
-        else if indexPath.section == 1 {
-            let storyBoard : UIStoryboard = UIStoryboard(name: "WatchLearnVC", bundle:nil)
-            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "WatchLearnVC") as! WatchLearnVC
-            self.navigationController?.pushViewController(nextViewController, animated: true)
-        }
-        else if indexPath.section == 2 {
-            let storyBoard : UIStoryboard = UIStoryboard(name: "EtkinlikVC", bundle:nil)
-            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "EtkinlikVC") as! EtkinlikVC
-            self.navigationController?.pushViewController(nextViewController, animated: true)
-        }
-        else if indexPath.section == 3 {
-            let storyBoard : UIStoryboard = UIStoryboard(name: "AskAselsanVC", bundle:nil)
-            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "AskAselsanVC") as! AskAselsanVC
-            self.navigationController?.pushViewController(nextViewController, animated: true)
-        }
+  
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 15.0 // whatever you want space between two cell

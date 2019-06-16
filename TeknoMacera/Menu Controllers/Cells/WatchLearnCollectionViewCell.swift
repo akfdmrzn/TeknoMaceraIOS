@@ -23,8 +23,6 @@ class WatchLearnCollectionViewCell: UICollectionViewCell {
     func setInfo(model : WatchLearnModel){
         self.labelTitle.text = model.title
         self.imageViewLogo.image = model.image
-        self.contentView.layer.borderWidth = 1.0
-        self.contentView.layer.borderColor = UIColor.blue.cgColor
     }
 }
 

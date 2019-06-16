@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "launch.jpeg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "video-home-tanitim@2x.png",
       "scale" : "2x"
     },
     {

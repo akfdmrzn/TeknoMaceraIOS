@@ -74,6 +74,9 @@ class KesfetVC: UIViewController, SideMenuItemContent, Storyboardable {
         task.resume()
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
     }
@@ -95,7 +98,10 @@ extension KesfetVC : UICollectionViewDelegate,UICollectionViewDataSource,UIColle
         return cell!
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "YoutubeLessonVC", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "YoutubeLessonVC") as! YoutubeLEssonViewController
+        nextViewController.url = self.kesfetList[indexPath.row].link
+        self.navigationController?.pushViewController(nextViewController, animated: true)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize.init(width: 150.0, height: 210.0)

@@ -23,21 +23,21 @@
                         <rect key="frame" x="25" y="15" width="386" height="137.5"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="dh0-8G-6Af">
-                                <rect key="frame" x="15" y="42.5" width="55" height="55"/>
+                                <rect key="frame" x="15" y="49" width="55" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="55" id="ozI-dK-eq4"/>
                                     <constraint firstAttribute="height" constant="55" id="qrf-Xk-tpv"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoo-7l-LPd">
-                                <rect key="frame" x="10" y="7" width="366" height="20.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <rect key="frame" x="10" y="7" width="366" height="27"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="19"/>
                                 <color key="textColor" red="0.92941176470588238" green="0.36078431372549019" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QR-Ho-7dP">
-                                <rect key="frame" x="85" y="42.5" width="286" height="16"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <rect key="frame" x="85" y="49" width="286" height="17"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="12"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

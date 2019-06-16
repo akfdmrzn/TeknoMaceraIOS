@@ -27,16 +27,19 @@ class RegisterVC: UIViewController, SideMenuItemContent, Storyboardable,MFMailCo
         self.indicator.isHidden = true
         
         self.txtFieldAd.attributedPlaceholder = NSAttributedString(string:"Adınız Soyadınız", attributes: [NSAttributedString.Key.foregroundColor:UIColor.white])
-        self.txtFieldEposta.attributedPlaceholder = NSAttributedString(string:"EPosta Adresiniz", attributes: [NSAttributedString.Key.foregroundColor:UIColor.white])
+        self.txtFieldEposta.attributedPlaceholder = NSAttributedString(string:"E-Posta Adresiniz", attributes: [NSAttributedString.Key.foregroundColor:UIColor.white])
         self.txtFieldKonu.attributedPlaceholder = NSAttributedString(string:"Konu", attributes: [NSAttributedString.Key.foregroundColor:UIColor.white])
         self.txtFieldDate.attributedPlaceholder = NSAttributedString(string:"Doğum Tarihiniz", attributes: [NSAttributedString.Key.foregroundColor:UIColor.white])
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
     }
     func sendEmail() {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
-            mail.setToRecipients(["you@yoursite.com"])
+            mail.setToRecipients(["akifde1907@gmail.com"])
             mail.setMessageBody("Ad:\(self.txtFieldAd.text)<br>Eposta:\(self.txtFieldEposta.text)<br>Konu:\(self.txtFieldKonu.text)<br>Doğum Tarihi:\(self.txtFieldDate.text)<br>", isHTML: true)
             
             present(mail, animated: true)
